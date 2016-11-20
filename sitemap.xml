@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://nanoc-plate.github.io/CNAME</loc>
+    <lastmod>2016-11-20</lastmod>
+  </url>
+  <url>
+    <loc>http://nanoc-plate.github.io/humans.txt</loc>
+    <lastmod>2016-11-20</lastmod>
+  </url>
+  <url>
+    <loc>http://nanoc-plate.github.io/</loc>
+    <lastmod>2016-11-20</lastmod>
+  </url>
+  <url>
+    <loc>http://nanoc-plate.github.io/.nojekyll</loc>
+    <lastmod>2016-11-20</lastmod>
+  </url>
+  <url>
+    <loc>http://nanoc-plate.github.io/robots.txt</loc>
+    <lastmod>2016-11-20</lastmod>
+  </url>
+  <url>
+    <loc>http://nanoc-plate.github.io/sitemap.xml</loc>
+    <lastmod>2016-11-20</lastmod>
+  </url>
+</urlset>
+

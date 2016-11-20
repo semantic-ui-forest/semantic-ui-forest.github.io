@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
+    <meta content="Nanoc-Plate, a New Way to Build Websites." name="description" />
+    <meta content="Nanoc, Websites, Blog, Static" name="keywords" />
+    <meta content="Xiao Hanyu" name="author" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="/manifest.json" rel="manifest" />
+    <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon" />
+    <meta content="#ffffff" name="theme-color" />
+    <title>Nanoc-Plate, a New Way to Build Websites.</title>
+    <link href="/static/dist/semantic-ui/semantic.min.css" rel="stylesheet" type="text/css" />
+    <link href="/static/dist/fonts.css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="/static/stylesheets/default.css" rel="stylesheet" type="text/css" />
+    <link href="/static/stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" />
+    <script src="/static/dist/jquery/jquery.min.js"></script>
+  </head>
+  <body lang="en">
+    <div id="content">
+      <nav class="ui borderless menu" lang="en">
+        <div class="ui container">
+          <a class="item" href="/"><img src="/static/logo/gravatar/gravatar.svg" /></a><a class="item" href="/posts">Posts</a><a class="item desktop-only" href="/categories">Categories</a><a class="item desktop-only" href="/tags">Tags</a><a class="item" href="/notes">Notes</a>
+          <div class="right menu">
+            <div class="item desktop-only">
+              <form action="https://www.google.com/search" class="ui form" method="get" target="_blank">
+                <input name="q" type="hidden" value="site:nanoc-plate.github.io" />
+                <div class="ui transparent left icon input">
+                  <input name="q" placeholder="Search..." type="text" /><i class="search icon"></i>
+                </div>
+              </form>
+            </div>
+            <a class="item" href="https://github.com/nanoc-plate"><i class="github icon"></i></a><a class="item desktop-only" href="/atom.xml"><i class="feed icon"></i></a>
+          </div>
+        </div>
+      </nav><div class="ui vertical center aligned stripe alternative segment">
+        <div class="ui container">
+          <img class="logo" src="/static/logo/gravatar/gravatar.svg" />
+          <h1>
+            Nanoc-Plate
+          </h1>
+          <iframe allowtransparency="true" frameborder="0" height="24" scrolling="0" src="https://ghbtns.com/github-btn.html?user=nanoc-plate&amp;repo=nanoc-plate&amp;type=watch&amp;count=true" width="75"></iframe><iframe allowtransparency="true" frameborder="0" height="24" scrolling="0" src="https://ghbtns.com/github-btn.html?user=nanoc-plate&amp;repo=nanoc-plate&amp;type=fork&amp;count=true" width="75"></iframe>
+          <p>
+            A smooth work flow to build static websites happily.
+          </p>
+        </div>
+      </div>
+      <div class="ui vertical stripe segment">
+        <div class="ui grid stackable container">
+          <div class="row">
+            <div class="column">
+              <h2>
+                Features
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="ui four column stackable divided grid">
+              <div class="row">
+                <div class="column">
+                  <h4>
+                    Beautiful
+                  </h4>
+                  <p>
+                    Born to be beautiful. Elaborate cross-platform web fonts solution for both Chinese and English.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      <a href="http://semantic-ui.com/">Semantic-UI</a>, the foundation.
+                    </li>
+                    <li>
+                      <a href="https://github.com/zenozeng/fonts.css">fonts.css</a>, for Chinese.
+                    </li>
+                    <li>
+                      <a href="http://www.linuxlibertine.org/">Linux Libertine</a>, for English.
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>
+                    Versatile
+                  </h4>
+                  <p>
+                    Support multiple <a href="http://en.wikipedia.org/wiki/Comparison_of_document_markup_languages">documentation markup language</a> via <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>
+                    </li>
+                    <li>
+                      <a href="http://orgmode.org/">Org</a>
+                    </li>
+                    <li>
+                      <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>
+                    </li>
+                    <li>
+                      <a href="https://en.wikipedia.org/wiki/Textile_(markup_language)">Textile</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>
+                    Flexible
+                  </h4>
+                  <p>
+                    Manage all kinds of resource files in a uniform and flexible way.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      Documents
+                    </li>
+                    <li>
+                      HTML & CSS & JavaScript
+                    </li>
+                    <li>
+                      Images & Videos
+                    </li>
+                    <li>
+                      Fonts
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>
+                    Batteries Included
+                  </h4>
+                  <p>
+                    Builtin generators for multiple components of a modern website.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      <a href="http://www.robotstxt.org/">robots.txt</a>
+                    </li>
+                    <li>
+                      <a href="http://humanstxt.org/">humans.txt</a>
+                    </li>
+                    <li>
+                      <a href="https://en.wikipedia.org/wiki/Atom_(standard)">Atom Feed</a>
+                    </li>
+                    <li>
+                      <a href="https://en.wikipedia.org/wiki/Site_map">Sitemap</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="plain desktop-only" />
+              <div class="row">
+                <div class="column">
+                  <h4>
+                    Dynamic
+                  </h4>
+                  <p>
+                    Generate dynamic contents from static contents, sounds like a magic?
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      Tags
+                    </li>
+                    <li>
+                      Categories
+                    </li>
+                    <li>
+                      Paginator
+                    </li>
+                    <li>
+                      List of Documents
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>
+                    Responsive
+                  </h4>
+                  <p>
+                    Born to be <a href="https://en.wikipedia.org/wiki/Responsive_web_design">Responsive</a>. Write once, fit everywhere. Perfect experience on all devices.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      Phone
+                    </li>
+                    <li>
+                      Tablet
+                    </li>
+                    <li>
+                      Desktop
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>
+                    Scienticfic!
+                  </h4>
+                  <p>
+                    Excellent math formula and syntax highlighting support for math and technical writings.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      <a href="https://www.mathjax.org/">MathJax</a>
+                    </li>
+                    <li>
+                      Optional PDF genaration
+                    </li>
+                    <li>
+                      Source code <a href="http://pandoc.org/MANUAL.html#syntax-highlighting">syntax highlighting</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>
+                    Integrations
+                  </h4>
+                  <p>
+                    Easy to integrate third-party services and bring lives and noises(I guess so) to your site.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      <a href="https://analytics.google.com">Google Analytics</a> for statistics
+                    </li>
+                    <li>
+                      <a href="https://disqus.com/">Disqus</a> for commenting
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="plain desktop-only" />
+              <div class="row">
+                <div class="column">
+                  <h4>
+                    Internationalization
+                  </h4>
+                  <p>
+                    One click to switch languages for the whole site, or just a single post or note.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      Built-in localization for common UI components.
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>
+                    Guidance
+                  </h4>
+                  <p>
+                    Best practice guidance for a smooth and happy work flow.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      <a href="http://guardgem.org/">Guard</a>
+                    </li>
+                    <li>
+                      <a href="http://browsersync.io/">Browsersync</a>
+                    </li>
+                    <li>
+                      <a href="https://pages.github.com/">Github Pages</a>
+                    </li>
+                    <li>
+                      <a href="https://travis-ci.org/">Travis-CI</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>
+                    Compatible
+                  </h4>
+                  <p>
+                    Nanoc-Plate is just a bundle of <a href="nanoc.ws">nanoc</a>. No wonder that we have all features of nanoc.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      Free-form metadata
+                    </li>
+                    <li>
+                      Programmable filters and helpers
+                    </li>
+                    <li>
+                      Various templating languages
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>
+                    Customizable
+                  </h4>
+                  <p>
+                    Want to do some more in-depth customization? Not that hard, we've made great choices already.
+                  </p>
+                  <ul class="ui list">
+                    <li>
+                      <a href="http://slim-lang.com/">Slim</a>, a better HTML.
+                    </li>
+                    <li>
+                      <a href="http://slim-lang.com/">Sass</a>, a better CSS.
+                    </li>
+                    <li>
+                      Vanilla JavaScript? Plus <a href="https://jquery.com/">jQuery</a>, just enough here.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <footer class="ui center aligned container" lang="en">
+        <hr />
+        <p>
+          Copyright © 2016 by Xiao Hanyu. All Rights Reserved.
+        </p>
+      </footer>
+      <script src="/static/dist/semantic-ui/semantic.min.js"></script>
+      <script src="/static/javascripts/ga.js"></script>
+      <script src="/static/javascripts/default.js"></script>
+    </div>
+  </body>
+</html>
