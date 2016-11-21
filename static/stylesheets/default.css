@@ -4,8 +4,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  background-color: #F8F8F8; }
+  text-rendering: optimizeLegibility; }
 
 footer {
   margin: 1rem 0; }
