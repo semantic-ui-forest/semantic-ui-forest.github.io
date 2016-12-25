@@ -145,7 +145,7 @@ nav.ui.menu .ui.container > .right.menu > a.item:last-child {
   .ui.demo.container {
     margin-left: calc((100% - 1127px)/2) !important;
     margin-right: 387px !important; }
-    .ui.demo.container .tab {
+    .ui.demo.container > .tab {
       width: 827px; }
 
   #content .vertical.segment:not(.center) .container {
@@ -159,7 +159,7 @@ nav.ui.menu .ui.container > .right.menu > a.item:last-child {
   .ui.demo.container {
     margin-left: calc((100% - 933px)/2) !important;
     margin-right: 250px !important; }
-    .ui.demo.container .tab {
+    .ui.demo.container > .tab {
       width: 732px; }
 
   #content .vertical.segment:not(.center) .container {
@@ -173,7 +173,7 @@ nav.ui.menu .ui.container > .right.menu > a.item:last-child {
   .ui.demo.container {
     margin-left: calc((100% - 723px)/2) !important;
     margin-right: 250 !important; }
-    .ui.demo.container .tab {
+    .ui.demo.container > .tab {
       width: 550px; }
 
   #content .vertical.segment:not(.center) .container {
@@ -186,7 +186,7 @@ nav.ui.menu .ui.container > .right.menu > a.item:last-child {
   .ui.demo.container {
     margin-left: auto;
     margin-right: auto; }
-    .ui.demo.container .tab {
+    .ui.demo.container > .tab {
       width: auto; }
 
   #content .vertical.segment .container {

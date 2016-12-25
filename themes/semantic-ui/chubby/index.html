@@ -21,48 +21,49 @@
     <script src="/static/dist/jquery/jquery.min.js"></script>
   </head>
   <body lang="cn">
-    <div id="content">
-      <nav class="ui borderless menu">
-        <div class="ui container">
-          <a class="item" href="/"><img src="/static/logo/gravatar/gravatar.svg" /></a>
-          <div class="ui pointing dropdown item">
-            Themes
-            <div class="i dropdown icon"></div>
-            <div class="menu">
-              <div class="item">
-                <i class="dropdown icon"></i>
-                <div class="text">
-                  Bootswatch
+    <div class="pusher">
+      <div id="content">
+        <nav class="ui borderless menu">
+          <div class="ui container">
+            <a class="item" href="/"><img src="/static/logo/gravatar/gravatar.svg" /></a>
+            <div class="ui pointing dropdown item">
+              Themes
+              <div class="i dropdown icon"></div>
+              <div class="menu">
+                <div class="item">
+                  <i class="dropdown icon"></i>
+                  <div class="text">
+                    Bootswatch
+                  </div>
+                  <div class="menu">
+                    <a class="item" href="/themes/bootswatch/bootswatch/">Bootswatch</a><a class="item" href="/themes/bootswatch/cerulean/">Cerulean</a><a class="item" href="/themes/bootswatch/cosmo/">Cosmo</a><a class="item" href="/themes/bootswatch/cyborg/">Cyborg</a><a class="item" href="/themes/bootswatch/darkly/">Darkly</a><a class="item" href="/themes/bootswatch/flatly/">Flatly</a><a class="item" href="/themes/bootswatch/journal/">Journal</a><a class="item" href="/themes/bootswatch/lumen/">Lumen</a><a class="item" href="/themes/bootswatch/paper/">Paper</a><a class="item" href="/themes/bootswatch/readable/">Readable</a><a class="item" href="/themes/bootswatch/sandstone/">Sandstone</a><a class="item" href="/themes/bootswatch/simplex/">Simplex</a><a class="item" href="/themes/bootswatch/slate/">Slate</a><a class="item" href="/themes/bootswatch/spacelab/">Spacelab</a><a class="item" href="/themes/bootswatch/superhero/">Superhero</a><a class="item" href="/themes/bootswatch/united/">United</a><a class="item" href="/themes/bootswatch/yeti/">Yeti</a>
+                  </div>
                 </div>
-                <div class="menu">
-                  <a class="item" href="/themes/bootswatch/bootswatch/">Bootswatch</a><a class="item" href="/themes/bootswatch/cerulean/">Cerulean</a><a class="item" href="/themes/bootswatch/cosmo/">Cosmo</a><a class="item" href="/themes/bootswatch/cyborg/">Cyborg</a><a class="item" href="/themes/bootswatch/darkly/">Darkly</a><a class="item" href="/themes/bootswatch/flatly/">Flatly</a><a class="item" href="/themes/bootswatch/journal/">Journal</a><a class="item" href="/themes/bootswatch/lumen/">Lumen</a><a class="item" href="/themes/bootswatch/paper/">Paper</a><a class="item" href="/themes/bootswatch/readable/">Readable</a><a class="item" href="/themes/bootswatch/sandstone/">Sandstone</a><a class="item" href="/themes/bootswatch/simplex/">Simplex</a><a class="item" href="/themes/bootswatch/slate/">Slate</a><a class="item" href="/themes/bootswatch/spacelab/">Spacelab</a><a class="item" href="/themes/bootswatch/superhero/">Superhero</a><a class="item" href="/themes/bootswatch/united/">United</a><a class="item" href="/themes/bootswatch/yeti/">Yeti</a>
-                </div>
-              </div>
-              <div class="item">
-                <i class="dropdown icon"></i>
-                <div class="text">
-                  Semantic-UI
-                </div>
-                <div class="menu">
-                  <a class="item" href="/themes/semantic-ui/amazon/">Amazon</a><a class="item" href="/themes/semantic-ui/bootstrap3/">Bootstrap3</a><a class="item" href="/themes/semantic-ui/chubby/">Chubby</a><a class="item" href="/themes/semantic-ui/flat/">Flat</a><a class="item" href="/themes/semantic-ui/github/">Github</a><a class="item" href="/themes/semantic-ui/material/">Material</a><a class="item" href="/themes/semantic-ui/semantic-ui/">Semantic-UI</a><a class="item" href="/themes/semantic-ui/twitter/">Twitter</a>
+                <div class="item">
+                  <i class="dropdown icon"></i>
+                  <div class="text">
+                    Semantic-UI
+                  </div>
+                  <div class="menu">
+                    <a class="item" href="/themes/semantic-ui/amazon/">Amazon</a><a class="item" href="/themes/semantic-ui/bootstrap3/">Bootstrap3</a><a class="item" href="/themes/semantic-ui/chubby/">Chubby</a><a class="item" href="/themes/semantic-ui/flat/">Flat</a><a class="item" href="/themes/semantic-ui/github/">Github</a><a class="item" href="/themes/semantic-ui/material/">Material</a><a class="item" href="/themes/semantic-ui/semantic-ui/">Semantic-UI</a><a class="item" href="/themes/semantic-ui/twitter/">Twitter</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <a class="item" href="/posts">Blog</a><a class="item" href="/notes">Help</a>
-          <div class="right menu">
-            <div class="item desktop-only">
-              <form action="https://www.google.com/search" class="ui form" method="get" target="_blank">
-                <input name="q" type="hidden" value="site:nanoc-plate.github.io" />
-                <div class="ui transparent left icon input">
-                  <input name="q" placeholder="Search..." type="text" /><i class="search icon"></i>
-                </div>
-              </form>
+            <a class="item" href="/posts">Blog</a><a class="item" href="/notes">Help</a>
+            <div class="right menu">
+              <div class="item desktop-only">
+                <form action="https://www.google.com/search" class="ui form" method="get" target="_blank">
+                  <input name="q" type="hidden" value="site:nanoc-plate.github.io" />
+                  <div class="ui transparent left icon input">
+                    <input name="q" placeholder="Search..." type="text" /><i class="search icon"></i>
+                  </div>
+                </form>
+              </div>
+              <a class="item" href="https://github.com/semantic-ui-forest"><i class="github icon"></i></a><a class="item desktop-only" href="/atom.xml"><i class="feed icon"></i></a>
             </div>
-            <a class="item" href="https://github.com/semantic-ui-forest"><i class="github icon"></i></a><a class="item desktop-only" href="/atom.xml"><i class="feed icon"></i></a>
           </div>
-        </div>
-      </nav><div class="ui vertical segment">
+        </nav><div class="ui vertical segment">
   <div class="ui container">
     <h2 class="ui huge header">
       Semantic-UI
@@ -84,7 +85,10 @@
       <h4 class="ui header">
         Button
       </h4>
-      <div class="button demo">
+      <div class="ui demo">
+        <div class="ui button follow">
+          Follow
+        </div>
         <div class="ui button">
           View
         </div>
@@ -250,6 +254,18 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.button.follow')
+            .state({
+              text: {
+                inactive : 'Follow',
+                active   : 'Following'
+              }
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
@@ -385,7 +401,7 @@
       <h4 class="ui header">
         Icon
       </h4>
-      <div class="demo icons">
+      <div class="ui demo icons">
         <i class="search icon"></i><i class="mail outline icon"></i><i class="external icon"></i><i class="wifi icon"></i><i class="setting icon"></i><i class="home icon"></i><i class="inbox icon"></i><i class="browser icon"></i><i class="tag icon"></i><i class="tags icon"></i><i class="calendar icon"></i><i class="comment icon"></i><i class="comments icon"></i><i class="shop icon"></i><i class="privacy icon"></i><i class="settings icon"></i><i class="trophy icon"></i><i class="payment icon"></i><i class="feed icon"></i><i class="alarm outline icon"></i><i class="tasks icon"></i><i class="cloud icon"></i><i class="lab icon"></i><i class="mail icon"></i><i class="idea icon"></i><i class="dashboard icon"></i><i class="sitemap icon"></i><i class="alarm icon"></i><i class="terminal icon"></i><i class="code icon"></i><i class="protect icon"></i><i class="calendar outline icon"></i><i class="ticket icon"></i><i class="external square icon"></i><i class="map icon"></i><i class="bug icon"></i><i class="mail square icon"></i><i class="history icon"></i><i class="options icon"></i><i class="comment outline icon"></i><i class="comments outline icon"></i><i class="download icon"></i><i class="repeat icon"></i><i class="refresh icon"></i><i class="lock icon"></i><i class="bookmark icon"></i><i class="print icon"></i><i class="write icon"></i><i class="theme icon"></i><i class="adjust icon"></i><i class="edit icon"></i><i class="external share icon"></i><i class="ban icon"></i><i class="mail forward icon"></i><i class="share icon"></i><i class="expand icon"></i><i class="compress icon"></i><i class="unhide icon"></i><i class="hide icon"></i><i class="random icon"></i><i class="retweet icon"></i><i class="sign out icon"></i><i class="pin icon"></i><i class="sign in icon"></i><i class="upload icon"></i><i class="call icon"></i><i class="call square icon"></i><i class="remove bookmark icon"></i><i class="unlock icon"></i><i class="configure icon"></i><i class="filter icon"></i><i class="wizard icon"></i><i class="undo icon"></i><i class="exchange icon"></i><i class="cloud download icon"></i><i class="cloud upload icon"></i><i class="reply icon"></i><i class="reply all icon"></i><i class="erase icon"></i><i class="unlock alternate icon"></i><i class="archive icon"></i><i class="translate icon"></i><i class="recycle icon"></i><i class="send icon"></i><i class="send outline icon"></i><i class="share alternate icon"></i><i class="share alternate square icon"></i><i class="wait icon"></i><i class="write square icon"></i><i class="share square icon"></i><i class="help circle icon"></i><i class="info circle icon"></i><i class="warning icon"></i><i class="warning circle icon"></i><i class="warning sign icon"></i><i class="help icon"></i><i class="info icon"></i><i class="announcement icon"></i><i class="users icon"></i><i class="doctor icon"></i><i class="female icon"></i><i class="male icon"></i><i class="child icon"></i><i class="user icon"></i><i class="handicap icon"></i><i class="student icon"></i><i class="grid layout icon"></i><i class="list layout icon"></i><i class="block layout icon"></i><i class="zoom icon"></i><i class="zoom out icon"></i><i class="resize vertical icon"></i><i class="resize horizontal icon"></i><i class="maximize icon"></i><i class="crop icon"></i><i class="cocktail icon"></i><i class="road icon"></i><i class="flag icon"></i><i class="book icon"></i><i class="gift icon"></i><i class="leaf icon"></i><i class="fire icon"></i><i class="plane icon"></i><i class="magnet icon"></i><i class="legal icon"></i><i class="lemon icon"></i><i class="world icon"></i><i class="travel icon"></i><i class="shipping icon"></i><i class="money icon"></i><i class="lightning icon"></i><i class="rain icon"></i><i class="treatment icon"></i><i class="suitcase icon"></i><i class="bar icon"></i><i class="flag outline icon"></i><i class="flag checkered icon"></i><i class="puzzle icon"></i><i class="fire extinguisher icon"></i><i class="rocket icon"></i><i class="anchor icon"></i><i class="bullseye icon"></i><i class="sun icon"></i><i class="moon icon"></i><i class="fax icon"></i><i class="life ring icon"></i><i class="bomb icon"></i><i class="crosshairs icon"></i><i class="asterisk icon"></i><i class="certificate icon"></i><i class="circle icon"></i><i class="quote left icon"></i><i class="quote right icon"></i><i class="ellipsis horizontal icon"></i><i class="ellipsis vertical icon"></i><i class="cube icon"></i><i class="cubes icon"></i><i class="circle notched icon"></i><i class="circle thin icon"></i><i class="checkmark icon"></i><i class="remove icon"></i><i class="checkmark box icon"></i><i class="move icon"></i><i class="add circle icon"></i><i class="minus circle icon"></i><i class="remove circle icon"></i><i class="check circle icon"></i><i class="remove circle outline icon"></i><i class="check circle outline icon"></i><i class="plus icon"></i><i class="minus icon"></i><i class="add square icon"></i><i class="radio icon"></i><i class="selected radio icon"></i><i class="minus square icon"></i><i class="minus square outline icon"></i><i class="check square icon"></i><i class="plus square outline icon"></i><i class="film icon"></i><i class="sound icon"></i><i class="photo icon"></i><i class="bar chart icon"></i><i class="camera retro icon"></i><i class="arrow circle outline down icon"></i><i class="arrow circle outline up icon"></i><i class="chevron left icon"></i><i class="chevron right icon"></i><i class="arrow left icon"></i><i class="arrow right icon"></i><i class="arrow up icon"></i><i class="arrow down icon"></i><i class="chevron up icon"></i><i class="chevron down icon"></i><i class="pointing right icon"></i><i class="pointing left icon"></i><i class="pointing up icon"></i><i class="pointing down icon"></i><i class="arrow circle left icon"></i><i class="arrow circle right icon"></i><i class="arrow circle up icon"></i><i class="arrow circle down icon"></i><i class="caret down icon"></i><i class="caret up icon"></i><i class="caret left icon"></i><i class="caret right icon"></i><i class="angle double left icon"></i><i class="angle double right icon"></i><i class="angle double up icon"></i><i class="angle double down icon"></i><i class="angle left icon"></i><i class="angle right icon"></i><i class="angle up icon"></i><i class="angle down icon"></i><i class="chevron circle left icon"></i><i class="chevron circle right icon"></i><i class="chevron circle up icon"></i><i class="chevron circle down icon"></i><i class="toggle down icon"></i><i class="toggle up icon"></i><i class="toggle right icon"></i><i class="long arrow down icon"></i><i class="long arrow up icon"></i><i class="long arrow left icon"></i><i class="long arrow right icon"></i><i class="arrow circle outline right icon"></i><i class="arrow circle outline left icon"></i><i class="toggle left icon"></i><i class="power icon"></i><i class="trash icon"></i><i class="disk outline icon"></i><i class="desktop icon"></i><i class="laptop icon"></i><i class="tablet icon"></i><i class="mobile icon"></i><i class="game icon"></i><i class="keyboard icon"></i><i class="folder icon"></i><i class="folder open icon"></i><i class="level up icon"></i><i class="level down icon"></i><i class="file icon"></i><i class="file outline icon"></i><i class="file text icon"></i><i class="file text outline icon"></i><i class="folder outline icon"></i><i class="folder open outline icon"></i><i class="file pdf outline icon"></i><i class="file word outline icon"></i><i class="file excel outline icon"></i><i class="file powerpoint outline icon"></i><i class="file image outline icon"></i><i class="file archive outline icon"></i><i class="file audio outline icon"></i><i class="file video outline icon"></i><i class="file code outline icon"></i><i class="barcode icon"></i><i class="qrcode icon"></i><i class="fork icon"></i><i class="html5 icon"></i><i class="css3 icon"></i><i class="rss square icon"></i><i class="openid icon"></i><i class="database icon"></i><i class="heart icon"></i><i class="star icon"></i><i class="empty star icon"></i><i class="thumbs outline up icon"></i><i class="thumbs outline down icon"></i><i class="star half icon"></i><i class="empty heart icon"></i><i class="smile icon"></i><i class="frown icon"></i><i class="meh icon"></i><i class="star half empty icon"></i><i class="thumbs up icon"></i><i class="thumbs down icon"></i><i class="music icon"></i><i class="video play outline icon"></i><i class="volume off icon"></i><i class="volume down icon"></i><i class="volume up icon"></i><i class="record icon"></i><i class="step backward icon"></i><i class="fast backward icon"></i><i class="backward icon"></i><i class="play icon"></i><i class="pause icon"></i><i class="stop icon"></i><i class="forward icon"></i><i class="fast forward icon"></i><i class="step forward icon"></i><i class="eject icon"></i><i class="unmute icon"></i><i class="mute icon"></i><i class="video play icon"></i><i class="marker icon"></i><i class="coffee icon"></i><i class="food icon"></i><i class="building outline icon"></i><i class="hospital icon"></i><i class="emergency icon"></i><i class="first aid icon"></i><i class="military icon"></i><i class="h icon"></i><i class="location arrow icon"></i><i class="space shuttle icon"></i><i class="university icon"></i><i class="building icon"></i><i class="paw icon"></i><i class="spoon icon"></i><i class="car icon"></i><i class="taxi icon"></i><i class="tree icon"></i><i class="table icon"></i><i class="columns icon"></i><i class="sort icon"></i><i class="sort ascending icon"></i><i class="sort descending icon"></i><i class="sort alphabet ascending icon"></i><i class="sort alphabet descending icon"></i><i class="sort content ascending icon"></i><i class="sort content descending icon"></i><i class="sort numeric ascending icon"></i><i class="sort numeric descending icon"></i><i class="font icon"></i><i class="bold icon"></i><i class="italic icon"></i><i class="text height icon"></i><i class="text width icon"></i><i class="align left icon"></i><i class="align center icon"></i><i class="align right icon"></i><i class="align justify icon"></i><i class="list icon"></i><i class="outdent icon"></i><i class="indent icon"></i><i class="linkify icon"></i><i class="cut icon"></i><i class="copy icon"></i><i class="attach icon"></i><i class="save icon"></i><i class="content icon"></i><i class="unordered list icon"></i><i class="ordered list icon"></i><i class="strikethrough icon"></i><i class="underline icon"></i><i class="paste icon"></i><i class="unlink icon"></i><i class="superscript icon"></i><i class="subscript icon"></i><i class="header icon"></i><i class="paragraph icon"></i><i class="euro icon"></i><i class="pound icon"></i><i class="dollar icon"></i><i class="rupee icon"></i><i class="yen icon"></i><i class="ruble icon"></i><i class="won icon"></i><i class="lira icon"></i><i class="twitter square icon"></i><i class="facebook square icon"></i><i class="linkedin square icon"></i><i class="github square icon"></i><i class="twitter icon"></i><i class="facebook icon"></i><i class="github icon"></i><i class="pinterest icon"></i><i class="pinterest square icon"></i><i class="google plus square icon"></i><i class="google plus icon"></i><i class="linkedin icon"></i><i class="github alternate icon"></i><i class="maxcdn icon"></i><i class="bitcoin icon"></i><i class="youtube square icon"></i><i class="youtube icon"></i><i class="xing icon"></i><i class="xing square icon"></i><i class="youtube play icon"></i><i class="dropbox icon"></i><i class="stack overflow icon"></i><i class="instagram icon"></i><i class="flickr icon"></i><i class="adn icon"></i><i class="bitbucket icon"></i><i class="bitbucket square icon"></i><i class="tumblr icon"></i><i class="tumblr square icon"></i><i class="apple icon"></i><i class="windows icon"></i><i class="android icon"></i><i class="linux icon"></i><i class="dribbble icon"></i><i class="skype icon"></i><i class="foursquare icon"></i><i class="trello icon"></i><i class="gittip icon"></i><i class="vk icon"></i><i class="weibo icon"></i><i class="renren icon"></i><i class="pagelines icon"></i><i class="stack exchange icon"></i><i class="vimeo icon"></i><i class="slack icon"></i><i class="wordpress icon"></i><i class="yahoo icon"></i><i class="google icon"></i><i class="reddit icon"></i><i class="reddit square icon"></i><i class="stumbleupon circle icon"></i><i class="stumbleupon icon"></i><i class="delicious icon"></i><i class="digg icon"></i><i class="pied piper icon"></i><i class="pied piper alternate icon"></i><i class="drupal icon"></i><i class="joomla icon"></i><i class="behance icon"></i><i class="behance square icon"></i><i class="steam icon"></i><i class="steam square icon"></i><i class="spotify icon"></i><i class="deviantart icon"></i><i class="soundcloud icon"></i><i class="vine icon"></i><i class="codepen icon"></i><i class="jsfiddle icon"></i><i class="rebel icon"></i><i class="empire icon"></i><i class="git square icon"></i><i class="git icon"></i><i class="hacker news icon"></i><i class="tencent weibo icon"></i><i class="qq icon"></i><i class="wechat icon"></i><i class="like icon"></i><i class="favorite icon"></i><i class="video icon"></i><i class="check icon"></i><i class="remove icon"></i><i class="close icon"></i><i class="cancel icon"></i><i class="delete icon"></i><i class="x icon"></i><i class="zoom in icon"></i><i class="magnify icon"></i><i class="shutdown icon"></i><i class="signal icon"></i><i class="clock icon"></i><i class="time icon"></i><i class="play circle outline icon"></i><i class="clockwise icon"></i><i class="headphone icon"></i><i class="volume off icon"></i><i class="camera icon"></i><i class="video camera icon"></i><i class="picture icon"></i><i class="pencil icon"></i><i class="compose icon"></i><i class="point icon"></i><i class="tint icon"></i><i class="signup icon"></i><i class="plus circle icon"></i><i class="minus circle icon"></i><i class="dont icon"></i><i class="minimize icon"></i><i class="add icon"></i><i class="eye icon"></i><i class="attention icon"></i><i class="cart icon"></i><i class="plane icon"></i><i class="shuffle icon"></i><i class="talk icon"></i><i class="chat icon"></i><i class="shopping cart icon"></i><i class="bar graph icon"></i><i class="key icon"></i><i class="privacy icon"></i><i class="cogs icon"></i><i class="discussions icon"></i><i class="like outline icon"></i><i class="dislike outline icon"></i><i class="heart outline icon"></i><i class="log out icon"></i><i class="thumb tack icon"></i><i class="winner icon"></i><i class="bookmark outline icon"></i><i class="phone square icon"></i><i class="phone square icon"></i><i class="credit card icon"></i><i class="rss icon"></i><i class="hdd outline icon"></i><i class="bullhorn icon"></i><i class="bell icon"></i><i class="hand outline right icon"></i><i class="hand outline left icon"></i><i class="hand outline up icon"></i><i class="hand outline down icon"></i><i class="globe icon"></i><i class="wrench icon"></i><i class="briefcase icon"></i><i class="group icon"></i><i class="flask icon"></i><i class="sidebar icon"></i><i class="bars icon"></i><i class="list ul icon"></i><i class="list ol icon"></i><i class="numbered list icon"></i><i class="magic icon"></i><i class="truck icon"></i><i class="currency icon"></i><i class="triangle down icon"></i><i class="dropdown icon"></i><i class="triangle up icon"></i><i class="triangle left icon"></i><i class="triangle right icon"></i><i class="envelope icon"></i><i class="conversation icon"></i><i class="lightning icon"></i><i class="umbrella icon"></i><i class="lightbulb icon"></i><i class="suitcase icon"></i><i class="bell outline icon"></i><i class="ambulance icon"></i><i class="medkit icon"></i><i class="fighter jet icon"></i><i class="beer icon"></i><i class="plus square icon"></i><i class="computer icon"></i><i class="circle outline icon"></i><i class="spinner icon"></i><i class="gamepad icon"></i><i class="star half full icon"></i><i class="remove link icon"></i><i class="question icon"></i><i class="attention icon"></i><i class="eraser icon"></i><i class="microphone icon"></i><i class="microphone slash icon"></i><i class="shield icon"></i><i class="target icon"></i><i class="play circle icon"></i><i class="pencil square icon"></i><i class="compass icon"></i><i class="eur icon"></i><i class="gbp icon"></i><i class="usd icon"></i><i class="inr icon"></i><i class="jpy icon"></i><i class="rub icon"></i><i class="krw icon"></i><i class="btc icon"></i><i class="try icon"></i><i class="zip icon"></i><i class="dot circle outline icon"></i><i class="sliders icon"></i><i class="graduation icon"></i><i class="weixin icon"></i>
       </div>
       <div class="ui divider"></div>
@@ -395,12 +411,12 @@
       <h4 class="ui header">
         Image
       </h4>
-      <img class="ui avatar image" src="/static/kitchen-sink/images/wireframe/square-image.png" /> User Avatar
-      <div class="ui ignored hidden divider"></div>
+      <img class="ui avatar image" src="/static/kitchen-sink/images/wireframe/square-image.png" /><span>User Avatar</span>
+      <div class="ui hidden divider"></div>
       <div class="ui small images">
         <img class="ui image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui image" src="/static/kitchen-sink/images/wireframe/image.png" />
       </div>
-      <div class="ui ignored hidden divider"></div>
+      <div class="ui hidden divider"></div>
       <img class="ui small circular image" src="/static/kitchen-sink/images/wireframe/square-image.png" />
     </div>
     <div class="example">
@@ -1381,7 +1397,7 @@
       <h4 class="ui header">
         Grid
       </h4>
-      <div class="shaded grid examples">
+      <div class="ui shaded grid examples">
         <div class="ui grid">
           <div class="sixteen column row">
             <div class="column"></div>
@@ -1552,7 +1568,7 @@
             <div class="column"></div>
           </div>
         </div>
-        <div class="ui grid">
+        <div class="ui relaxed grid">
           <div class="row">
             <div class="one wide column"></div>
             <div class="fifteen wide column"></div>
@@ -1896,6 +1912,23 @@
       <div class="ui secondary pointing vertical demo menu">
         <a class="active item"> A</a><a class="item"> B</a><a class="item"> C</a>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.demo .example .menu a.item')
+            .on('click', function() {
+              if(!$(this).hasClass('dropdown')) {
+                $(this)
+                  .addClass('active')
+                  .closest('.ui.menu')
+                  .find('.item')
+                  .not($(this))
+                  .removeClass('active')
+                ;
+              }
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
@@ -1970,6 +2003,15 @@
       <div class="ui bottom attached message">
         Bottom attached
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.example .message .close, .example .html .message .close')
+            .on('click', function() {
+              $(this).closest('.message').transition('scale out');
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
@@ -2444,6 +2486,18 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.demo .star.rating')
+            .rating()
+          ;
+          $('.demo .card .dimmer')
+            .dimmer({
+              on: 'hover'
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
@@ -2841,6 +2895,13 @@
           <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/paragraph.png" />
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.demo .example .ui.accordion')
+            .accordion()
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
@@ -2882,96 +2943,156 @@
       <div class="ui toggle checkbox">
         <input name="public" type="checkbox" /><label>Toggle</label>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.demo .ui.checkbox')
+            .checkbox()
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
         Dimmer
       </h4>
-      <div class="dimmer demo">
-        <div class="ui segment">
-          <h3 class="ui header">
-            Dimmable Section
-          </h3>
-          <div class="ui small images">
-            <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" />
+      <div class="ui">
+        <div class="dimmer demo">
+          <div class="ui segment">
+            <h3 class="ui header">
+              Dimmable Section
+            </h3>
+            <div class="ui small images">
+              <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" />
+            </div>
+            <img class="ui medium wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
+            <div class="ui dimmer"></div>
           </div>
-          <img class="ui medium wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
-          <div class="ui dimmer"></div>
-        </div>
-        <div class="ui ignored ignored icon buttons">
-          <div class="ui show button">
-            <i class="plus icon"></i>
-          </div>
-          <div class="ui hide button">
-            <i class="minus icon"></i>
-          </div>
-        </div>
-      </div>
-      <div class="dimmer demo">
-        <div class="ui segment">
-          <h3 class="ui header">
-            Inverted Dimmer
-          </h3>
-          <div class="ui small images">
-            <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" />
-          </div>
-          <img class="ui medium wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
-          <div class="ui inverted dimmer"></div>
-        </div>
-        <div class="ui ignored ignored icon buttons">
-          <div class="ui show button">
-            <i class="plus icon"></i>
-          </div>
-          <div class="ui hide button">
-            <i class="minus icon"></i>
-          </div>
-        </div>
-      </div>
-      <div class="dimmer demo">
-        <div class="ui segment">
-          <h3 class="ui header">
-            Dimmer With Content
-          </h3>
-          <div class="ui small images">
-            <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" />
-          </div>
-          <img class="ui medium wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
-          <div class="ui dimmer">
-            <div class="content">
-              <div class="center">
-                <h2 class="ui inverted icon header">
-                  <i class="heart icon"></i> Dimmed Message!
-                </h2>
-              </div>
+          <div class="ui ignored ignored icon buttons">
+            <div class="ui show button">
+              <i class="plus icon"></i>
+            </div>
+            <div class="ui hide button">
+              <i class="minus icon"></i>
             </div>
           </div>
         </div>
-        <div class="ui ignored ignored icon buttons">
-          <div class="ui show button">
-            <i class="plus icon"></i>
+        <div class="dimmer demo">
+          <div class="ui segment">
+            <h3 class="ui header">
+              Inverted Dimmer
+            </h3>
+            <div class="ui small images">
+              <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" />
+            </div>
+            <img class="ui medium wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
+            <div class="ui inverted dimmer"></div>
           </div>
-          <div class="ui hide button">
-            <i class="minus icon"></i>
+          <div class="ui ignored ignored icon buttons">
+            <div class="ui show button">
+              <i class="plus icon"></i>
+            </div>
+            <div class="ui hide button">
+              <i class="minus icon"></i>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="dimmer demo">
-        <div class="ui page button">
-          <i class="plus icon"></i> Page Dimmer
-        </div>
-      </div>
-      <div class="ui demo page dimmer">
-        <div class="content">
-          <div class="center">
-            <h1 class="ui inverted icon header">
-              <i class="mail icon"></i>Dimmer Message
-              <div class="sub header">
-                Dimmer sub-header
+        <div class="dimmer demo">
+          <div class="ui segment">
+            <h3 class="ui header">
+              Dimmer With Content
+            </h3>
+            <div class="ui small images">
+              <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" /><img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/image.png" />
+            </div>
+            <img class="ui medium wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <h2 class="ui inverted icon header">
+                    <i class="heart icon"></i> Dimmed Message!
+                  </h2>
+                </div>
               </div>
-            </h1>
+            </div>
+          </div>
+          <div class="ui ignored ignored icon buttons">
+            <div class="ui show button">
+              <i class="plus icon"></i>
+            </div>
+            <div class="ui hide button">
+              <i class="minus icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="dimmer demo">
+          <div class="ui page button">
+            <i class="plus icon"></i> Page Dimmer
+          </div>
+        </div>
+        <div class="ui demo page dimmer">
+          <div class="content">
+            <div class="center">
+              <h1 class="ui inverted icon header">
+                <i class="mail icon"></i>Dimmer Message
+                <div class="sub header">
+                  Dimmer sub-header
+                </div>
+              </h1>
+            </div>
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          // selector cache
+          var
+              $pageDimmer = $('.demo.page.dimmer'),
+              $demo       = $('.dimmer.demo'),
+              $showButton = $demo.find('.show.button'),
+              $pageButton = $demo.find('.page.button'),
+              $hideButton = $demo.find('.hide.button'),
+              // alias
+              handler
+          ;
+        
+          // event handlers
+          handler = {
+            show: function() {
+              $(this)
+                .closest('.demo')
+                .find('.segment')
+                .dimmer('show')
+              ;
+            },
+            hide: function() {
+              $(this)
+                .closest('.demo')
+                .find('.segment')
+                .dimmer('hide')
+              ;
+            },
+            page: function() {
+              $('.demo.page.dimmer')
+                .dimmer('show')
+              ;
+            }
+          };
+        
+          $pageDimmer
+            .dimmer()
+          ;
+        
+          $pageButton
+            .on('click', handler.page)
+          ;
+          $showButton
+            .on('click', handler.show)
+          ;
+          $hideButton
+            .on('click', handler.hide)
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
@@ -3805,7 +3926,7 @@
         </div>
       </div>
       <div class="ui hidden divider"></div>
-      Show me posts trending
+      <span>Show me posts trending </span>
       <div class="ui inline dropdown">
         <div class="text">
           today
@@ -3984,6 +4105,18 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.demo .ui.dropdown')
+            .dropdown()
+          ;
+          $('.demo .ui.menu .dropdown')
+            .dropdown({
+              on: 'hover'
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
@@ -4081,12 +4214,28 @@
     </div>
   </div>
 </div>
+      <script>
+        $(document).ready(function() {
+          $('.demo.modal')
+            .modal()
+          ;
+          $('.standard.demo.modal')
+            .modal('attach events', '.standard.demo.button')
+          ;
+          $('.basic.demo.modal')
+            .modal('attach events', '.minimal.demo.button')
+          ;
+          $('.fullscreen.demo.modal')
+            .modal('attach events', '.fullscreen.demo.button')
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
         Popup
       </h4>
-      <div class="popup demos">
+      <div class="ui demos">
         <img class="ui avatar image" data-content="Elliot has been a member since July 2012" data-title="Elliot Fu" src="/static/kitchen-sink/images/avatar/small/elliot.jpg" /><img class="ui avatar image" data-content="Stevie has been a member since August 2013" data-title="Stevie Feliciano" src="/static/kitchen-sink/images/avatar/small/stevie.jpg" /><img class="ui avatar image" data-content="Matt has been a member since July 2014" data-title="Matt" src="/static/kitchen-sink/images/avatar/small/matt.jpg" />
         <div class="ui button">
           Fluid Popup
@@ -4176,6 +4325,30 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.ui.demos .position .icon')
+            .popup()
+          ;
+          $('.ui.demos .avatar')
+            .popup()
+          ;
+          $('.ui.demos .button')
+            .popup()
+          ;
+          $('.ui.demos .menu .browse')
+            .popup({
+              inline   : true,
+              hoverable: true,
+              position : 'bottom left',
+              delay: {
+                show: 300,
+                hide: 800
+              }
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
@@ -4202,12 +4375,61 @@
       <div class="ui bottom attached demo progress">
         <div class="bar"></div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.attached.progress.demo')
+            .progress({
+              label   : false,
+              value   : Math.floor(Math.random() * 5) + 1
+            })
+          ;
+          $('.basic.progress.demo')
+            .progress({
+              label   : false,
+              value   : Math.floor(Math.random() * 5) + 1,
+              text    : {
+                active  : '{percent}% Complete',
+                success : 'Done!'
+              }
+            })
+          ;
+          $('.indicating.progress.demo')
+            .progress({
+              label   : true,
+              total   : 10,
+              value   : Math.floor(Math.random() * 5) + 1,
+              text    : {
+                active  : '{percent}% Done',
+                success : 'Completed!'
+              }
+            })
+          ;
+          $('.file.progress.demo')
+            .progress({
+              label: false,
+              text: {
+                active  : 'Uploading {value} of {total}',
+                success : '{total} Files Uploaded!'
+              }
+            })
+          ;
+          var progress = function() {
+            $('.demo.progress').progress('increment');
+            setTimeout(progress, (Math.random() * 2000) + 300);
+          };
+          setTimeout(progress, 1000);
+        
+          setInterval(function() {
+            $('.demo.progress').progress('reset');
+          }, 30000);
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
         Rating
       </h4>
-      <div class="rating demos">
+      <div class="ui demos">
         <div class="ui relaxed divided items">
           <div class="item">
             <div class="content">
@@ -4313,12 +4535,24 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.demos .items .ui.rating')
+            .rating()
+          ;
+          $('.demos .list .ui.rating')
+            .rating({
+              clearable: true
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
         Search
       </h4>
-      <div class="search demo">
+      <div class="ui search demo">
         <div class="ui remote search">
           <div class="ui icon input">
             <input class="prompt" placeholder="Remote search..." type="text" /><i class="search icon"></i>
@@ -4340,12 +4574,280 @@
           <div class="results"></div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          var content = [
+            { title: 'Andorrs' },
+            { title: 'United Arab Emirates' },
+            { title: 'Afghanistas' },
+            { title: 'Antigus' },
+            { title: 'Anguills' },
+            { title: 'Albanis' },
+            { title: 'Armenis' },
+            { title: 'Netherlands Antilles' },
+            { title: 'Angols' },
+            { title: 'Argentins' },
+            { title: 'American Samos' },
+            { title: 'Austris' },
+            { title: 'Australis' },
+            { title: 'Arubs' },
+            { title: 'Aland Islands' },
+            { title: 'Azerbaijas' },
+            { title: 'Bosnis' },
+            { title: 'Barbados' },
+            { title: 'Bangladess' },
+            { title: 'Belgius' },
+            { title: 'Burkina Fass' },
+            { title: 'Bulgaris' },
+            { title: 'Bahrais' },
+            { title: 'Burunds' },
+            { title: 'Benis' },
+            { title: 'Bermuds' },
+            { title: 'Brunes' },
+            { title: 'Bolivis' },
+            { title: 'Brazis' },
+            { title: 'Bahamas' },
+            { title: 'Bhutas' },
+            { title: 'Bouvet Islans' },
+            { title: 'Botswans' },
+            { title: 'Belarus' },
+            { title: 'Belizs' },
+            { title: 'Canads' },
+            { title: 'Cocos Islands' },
+            { title: 'Congs' },
+            { title: 'Central African Republis' },
+            { title: 'Congo Brazzavills' },
+            { title: 'Switzerlans' },
+            { title: 'Cote Divoirs' },
+            { title: 'Cook Islands' },
+            { title: 'Chils' },
+            { title: 'Cameroos' },
+            { title: 'Chins' },
+            { title: 'Colombis' },
+            { title: 'Costa Rics' },
+            { title: 'Serbis' },
+            { title: 'Cubs' },
+            { title: 'Cape Verds' },
+            { title: 'Christmas Islans' },
+            { title: 'Cyprus' },
+            { title: 'Czech Republis' },
+            { title: 'Germans' },
+            { title: 'Djibouts' },
+            { title: 'Denmars' },
+            { title: 'Dominics' },
+            { title: 'Dominican Republis' },
+            { title: 'Algeris' },
+            { title: 'Ecuados' },
+            { title: 'Estonis' },
+            { title: 'Egyps' },
+            { title: 'Western Sahars' },
+            { title: 'Eritres' },
+            { title: 'Spais' },
+            { title: 'Ethiopis' },
+            { title: 'European Unios' },
+            { title: 'Finlans' },
+            { title: 'Fijs' },
+            { title: 'Falkland Islands' },
+            { title: 'Micronesis' },
+            { title: 'Faroe Islands' },
+            { title: 'Francs' },
+            { title: 'Gabos' },
+            { title: 'Englans' },
+            { title: 'Grenads' },
+            { title: 'Georgis' },
+            { title: 'French Guians' },
+            { title: 'Ghans' },
+            { title: 'Gibraltas' },
+            { title: 'Greenlans' },
+            { title: 'Gambis' },
+            { title: 'Guines' },
+            { title: 'Guadeloups' },
+            { title: 'Equatorial Guines' },
+            { title: 'Greecs' },
+            { title: 'Sandwich Islands' },
+            { title: 'Guatemals' },
+            { title: 'Guas' },
+            { title: 'Guinea-Bissas' },
+            { title: 'Guyans' },
+            { title: 'Hong Kons' },
+            { title: 'Heard Islans' },
+            { title: 'Honduras' },
+            { title: 'Croatis' },
+            { title: 'Haits' },
+            { title: 'Hungars' },
+            { title: 'Indonesis' },
+            { title: 'Irelans' },
+            { title: 'Israes' },
+            { title: 'Indis' },
+            { title: 'Indian Ocean Territors' },
+            { title: 'Iras' },
+            { title: 'Iras' },
+            { title: 'Icelans' },
+            { title: 'Itals' },
+            { title: 'Jamaics' },
+            { title: 'Jordas' },
+            { title: 'Japas' },
+            { title: 'Kenys' },
+            { title: 'Kyrgyzstas' },
+            { title: 'Cambodis' },
+            { title: 'Kiribats' },
+            { title: 'Comoros' },
+            { title: 'Saint Kitts and Nevis' },
+            { title: 'North Kores' },
+            { title: 'South Kores' },
+            { title: 'Kuwais' },
+            { title: 'Cayman Islands' },
+            { title: 'Kazakhstas' },
+            { title: 'Laos' },
+            { title: 'Lebanos' },
+            { title: 'Saint Lucis' },
+            { title: 'Liechtensteis' },
+            { title: 'Sri Lanks' },
+            { title: 'Liberis' },
+            { title: 'Lesoths' },
+            { title: 'Lithuanis' },
+            { title: 'Luxembours' },
+            { title: 'Latvis' },
+            { title: 'Libys' },
+            { title: 'Moroccs' },
+            { title: 'Monacs' },
+            { title: 'Moldovs' },
+            { title: 'Montenegrs' },
+            { title: 'Madagascas' },
+            { title: 'Marshall Islands' },
+            { title: 'MacEdonis' },
+            { title: 'Mals' },
+            { title: 'Burms' },
+            { title: 'Mongolis' },
+            { title: 'MacAs' },
+            { title: 'Northern Mariana Islands' },
+            { title: 'Martiniqus' },
+            { title: 'Mauritanis' },
+            { title: 'Montserras' },
+            { title: 'Malts' },
+            { title: 'Mauritius' },
+            { title: 'Maldives' },
+            { title: 'Malaws' },
+            { title: 'Mexics' },
+            { title: 'Malaysis' },
+            { title: 'Mozambiqus' },
+            { title: 'Namibis' },
+            { title: 'New Caledonis' },
+            { title: 'Niges' },
+            { title: 'Norfolk Islans' },
+            { title: 'Nigeris' },
+            { title: 'Nicaragus' },
+            { title: 'Netherlands' },
+            { title: 'Norwas' },
+            { title: 'Nepas' },
+            { title: 'Naurs' },
+            { title: 'Nius' },
+            { title: 'New Zealans' },
+            { title: 'Omas' },
+            { title: 'Panams' },
+            { title: 'Pers' },
+            { title: 'French Polynesis' },
+            { title: 'New Guines' },
+            { title: 'Philippines' },
+            { title: 'Pakistas' },
+            { title: 'Polans' },
+            { title: 'Saint Pierrs' },
+            { title: 'Pitcairn Islands' },
+            { title: 'Puerto Rics' },
+            { title: 'Palestins' },
+            { title: 'Portugas' },
+            { title: 'Palas' },
+            { title: 'Paraguas' },
+            { title: 'Qatas' },
+            { title: 'Reunios' },
+            { title: 'Romanis' },
+            { title: 'Serbis' },
+            { title: 'Russis' },
+            { title: 'Rwands' },
+            { title: 'Saudi Arabis' },
+            { title: 'Solomon Islands' },
+            { title: 'Seychelles' },
+            { title: 'Sudas' },
+            { title: 'Swedes' },
+            { title: 'Singapors' },
+            { title: 'Saint Helens' },
+            { title: 'Slovenis' },
+            { title: 'Svalbard, I Flag Jan Mayes' },
+            { title: 'Slovakis' },
+            { title: 'Sierra Leons' },
+            { title: 'San Marins' },
+            { title: 'Senegas' },
+            { title: 'Somalis' },
+            { title: 'Surinams' },
+            { title: 'Sao Toms' },
+            { title: 'El Salvados' },
+            { title: 'Syris' },
+            { title: 'Swazilans' },
+            { title: 'Caicos Islands' },
+            { title: 'Chas' },
+            { title: 'French Territories' },
+            { title: 'Togs' },
+            { title: 'Thailans' },
+            { title: 'Tajikistas' },
+            { title: 'Tokelas' },
+            { title: 'Timorlests' },
+            { title: 'Turkmenistas' },
+            { title: 'Tunisis' },
+            { title: 'Tongs' },
+            { title: 'Turkes' },
+            { title: 'Trinidas' },
+            { title: 'Tuvals' },
+            { title: 'Taiwas' },
+            { title: 'Tanzanis' },
+            { title: 'Ukrains' },
+            { title: 'Ugands' },
+            { title: 'Us Minor Islands' },
+            { title: 'United States' },
+            { title: 'Uruguas' },
+            { title: 'Uzbekistas' },
+            { title: 'Vatican Cits' },
+            { title: 'Saint Vincens' },
+            { title: 'Venezuels' },
+            { title: 'British Virgin Islands' },
+            { title: 'Us Virgin Islands' },
+            { title: 'Vietnas' },
+            { title: 'Vanuats' },
+            { title: 'Wallis and Futuns' },
+            { title: 'Samos' },
+            { title: 'Yemes' },
+            { title: 'Mayotts' },
+            { title: 'South Africs' },
+            { title: 'Zambis' },
+            { title: 'Zimbabws' }
+          ];
+          $('.search.demo .local')
+            .search({
+              source: content
+            })
+          ;
+          $('.search.demo .remote')
+            .search({
+              apiSettings: {
+                action: 'search'
+              }
+            })
+          ;
+          $('.search.demo .category')
+            .search({
+              type: 'category',
+              apiSettings: {
+                action: 'categorySearch'
+              }
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
         Shape
       </h4>
-      <div class="shape demos">
+      <div class="ui shape demos">
         <div class="ui two column center aligned stackable doubling grid">
           <div class="column">
             <div class="ui shape">
@@ -4493,16 +4995,55 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          var
+              $demo            = $('.shape.demos .ui.shape'),
+              $directionButton = $('.shape.demos .direction .button'),
+              handler
+          ;
+        
+          // event handlers
+          handler = {
+            rotate: function() {
+              var
+              $shape    = $(this).closest('.buttons').prevAll('.ui.shape').eq(0),
+              direction = $(this).data('direction') || false,
+              animation = $(this).data('animation') || false
+              ;
+              if(direction && animation) {
+                $shape
+                  .shape(animation + '.' + direction)
+                ;
+              }
+            }
+          };
+        
+          // attach events
+          $demo
+            .shape()
+          ;
+          $directionButton
+            .on('click', handler.rotate)
+            .popup({
+              position  : 'bottom center'
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
         Sidebar
       </h4>
-      <div class="sidebar direction demo">
+      <div class="ui direction demo">
         <div class="ui toggle dim checkbox">
           <input name="dim" type="checkbox" /><label>Dim Page</label>
         </div>
         <div class="ui hidden divider"></div>
+        <h5 class="ui header">
+          Direction
+        </h5>
         <div class="ui buttons">
           <div class="ui button" data-direction="left">
             Left
@@ -4519,7 +5060,7 @@
         </div>
         <div class="ui hidden divider"></div>
         <h5 class="ui header">
-          Animation
+          All Direction Animations
         </h5>
         <div class="ui button" data-transition="overlay">
           Overlay
@@ -4531,107 +5072,130 @@
           Scale Down
         </div>
         <h5 class="ui header">
-          Horizontal-Only Animation
+          Horizontal-Only Animations
         </h5>
-        <div class="ui button" data-transition="uncover">
+        <div class="ui horizontal button" data-transition="uncover">
           Uncover
         </div>
-        <div class="ui button" data-transition="slide along">
+        <div class="ui horizontal button" data-transition="slide along">
           Slide Along
         </div>
-        <div class="ui button" data-transition="slide out">
+        <div class="ui horizontal button" data-transition="slide out">
           Slide Out
         </div>
       </div>
-      <div class="ui right demo sidebar vertical inverted menu">
-        <a class="header item">File Permissions</a><a class="item">Share on Social</a><a class="item">Share by E-mail</a><a class="item">Edit Permissions</a><a class="item">Delete Permanently</a>
-      </div>
-      <div class="ui left demo vertical inverted labeled icon sidebar menu">
-        <a class="item"><i class="home icon"></i> Home</a><a class="item"><i class="block layout icon"></i> Topics</a><a class="item"><i class="smile icon"></i> Friends</a><a class="item"><i class="calendar icon"></i> History</a><a class="item"><i class="mail icon"></i> Messages</a><a class="item"><i class="chat icon"></i> Discussions</a><a class="item"><i class="trophy icon"></i> Achievements</a><a class="item"><i class="shop icon"></i> Store</a><a class="item"><i class="settings icon"></i> Settings</a>
-      </div>
-      <div class="ui top demo sidebar ui segment">
-        <div class="ui center aligned page grid">
-          <div class="one column row">
-            <div class="sixteen wide column">
-              <h3 class="ui header">
-                New Content Awaits
-              </h3>
-            </div>
-          </div>
-          <div class="three column divided row">
-            <div class="column">
-              <img class="ui wireframe image" src="/images/wireframe/media-paragraph.png" />
-            </div>
-            <div class="column">
-              <img class="ui wireframe image" src="/images/wireframe/media-paragraph.png" />
-            </div>
-            <div class="column">
-              <img class="ui wireframe image" src="/images/wireframe/media-paragraph.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ui bottom demo inverted nine item labeled icon sidebar menu">
-        <a class="item"><i class="home icon"></i> Home</a><a class="item"><i class="block layout icon"></i> Topics</a><a class="item"><i class="smile icon"></i> Friends</a><a class="item"><i class="calendar icon"></i> History</a><a class="item"><i class="mail icon"></i> Messages</a><a class="item"><i class="chat icon"></i> Discussions</a><a class="item"><i class="trophy icon"></i> Achievements</a><a class="item"><i class="shop icon"></i> Store</a><a class="item"><i class="settings icon"></i> Settings</a>
-      </div>
+      <script>
+        $(document).ready(function() {
+          $('.direction.demo')
+            .find('.buttons .button')
+              .on('click', function() {
+                var
+                  direction = $(this).data('direction')
+                ;
+                $(this).addClass('active').siblings().removeClass('active');
+                if(direction === 'top' || direction === 'bottom') {
+                  $('.horizontal.button').addClass('disabled');
+                }
+                else {
+                  $('.horizontal.button').removeClass('disabled');
+                }
+              })
+              .end()
+              .children('.button')
+              .on('click', function() {
+                var
+                  transition = $(this).data('transition'),
+                  direction  = $('.direction.demo .buttons .button.active').data('direction'),
+                  dimPage    = $('.direction.demo .dim').checkbox('is checked')
+                ;
+                if( $(this).filter('.disabled').length === 0) {
+                  $('.' + direction + '.demo.sidebar')
+                    .not('.styled')
+                    .sidebar('setting', {
+                      dimPage          : dimPage,
+                      transition       : transition,
+                      mobileTransition : transition,
+                      scrollLock: true,
+                      returnScroll: true
+                    })
+                  ;
+                  $('.' + direction + '.demo.sidebar').not('.styled').sidebar('toggle');
+                }
+        
+              })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
         Tab
       </h4>
-      <div class="tab demo">
-        <div class="ui secondary menu">
-          <a class="item" data-tab="first">First</a><a class="item active" data-tab="second">Second</a><a class="item" data-tab="third">Third</a>
-        </div>
-        <div class="ui tab segment" data-tab="first">
-          <div class="ui top attached tabular menu">
-            <a class="active item" data-tab="first/a">1A</a><a class="item" data-tab="first/b">1B</a><a class="item" data-tab="first/c">1C</a>
+      <div class="ui">
+        <div class="tab demo">
+          <div class="ui secondary menu">
+            <a class="item" data-tab="first">First</a><a class="item active" data-tab="second">Second</a><a class="item" data-tab="third">Third</a>
           </div>
-          <div class="ui bottom attached active tab segment" data-tab="first/a">
-            1A
+          <div class="ui tab segment" data-tab="first">
+            <div class="ui top attached tabular menu">
+              <a class="active item" data-tab="first/a">1A</a><a class="item" data-tab="first/b">1B</a><a class="item" data-tab="first/c">1C</a>
+            </div>
+            <div class="ui bottom attached active tab segment" data-tab="first/a">
+              1A
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="first/b">
+              1B
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="first/c">
+              1C
+            </div>
           </div>
-          <div class="ui bottom attached tab segment" data-tab="first/b">
-            1B
+          <div class="ui tab segment active" data-tab="second">
+            <div class="ui top attached tabular menu">
+              <a class="item" data-tab="second/a">2A</a><a class="item" data-tab="second/b">2B</a><a class="item active" data-tab="second/c">2C</a>
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="second/a">
+              2A
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="second/b">
+              2B
+            </div>
+            <div class="ui bottom attached tab segment active" data-tab="second/c">
+              2C
+            </div>
           </div>
-          <div class="ui bottom attached tab segment" data-tab="first/c">
-            1C
-          </div>
-        </div>
-        <div class="ui tab segment active" data-tab="second">
-          <div class="ui top attached tabular menu">
-            <a class="item" data-tab="second/a">2A</a><a class="item" data-tab="second/b">2B</a><a class="item active" data-tab="second/c">2C</a>
-          </div>
-          <div class="ui bottom attached tab segment" data-tab="second/a">
-            2A
-          </div>
-          <div class="ui bottom attached tab segment" data-tab="second/b">
-            2B
-          </div>
-          <div class="ui bottom attached tab segment active" data-tab="second/c">
-            2C
-          </div>
-        </div>
-        <div class="ui tab segment" data-tab="third">
-          <div class="ui top attached tabular menu">
-            <a class="item" data-tab="third/a">3A</a><a class="item" data-tab="third/b">3B</a><a class="item" data-tab="third/c">3C</a>
-          </div>
-          <div class="ui bottom attached tab segment" data-tab="third/a">
-            3A
-          </div>
-          <div class="ui bottom attached tab segment" data-tab="third/b">
-            3B
-          </div>
-          <div class="ui bottom attached tab segment" data-tab="third/c">
-            3C
+          <div class="ui tab segment" data-tab="third">
+            <div class="ui top attached tabular menu">
+              <a class="item" data-tab="third/a">3A</a><a class="item" data-tab="third/b">3B</a><a class="item" data-tab="third/c">3C</a>
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="third/a">
+              3A
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="third/b">
+              3B
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="third/c">
+              3C
+            </div>
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.tab.demo .menu .item')
+            .tab({
+              history: true,
+              context: $('.tab.demo')
+            })
+          ;
+        });
+      </script>
     </div>
     <div class="example">
       <h4 class="ui header">
         Transition
       </h4>
-      <div class="transition demo">
+      <div class="ui transition demo">
         <div class="ui small images">
           <img class="ui image" src="/static/kitchen-sink/images/leaves/14.png" /><img class="ui image" src="/static/kitchen-sink/images/leaves/20.png" /><img class="ui image" src="/static/kitchen-sink/images/leaves/12.png" /><img class="ui image" src="/static/kitchen-sink/images/leaves/9.png" /><img class="ui image" src="/static/kitchen-sink/images/leaves/13.png" />
         </div>
@@ -4681,24 +5245,78 @@
           Slide Up
         </div>
       </div>
+      <script>
+        $(document).ready(function() {
+          $('.transition.demo .button')
+            .on('click', function() {
+              var animation = $(this).text();
+              if(typeof animation == 'string') {
+                animation = animation.toLowerCase();
+              }
+              $('.transition.demo .image')
+                .transition({
+                  animation: animation,
+                  interval: 200
+                })
+              ;
+            })
+          ;
+        });
+      </script>
     </div>
   </div>
 </div>
 <link href="/static/kitchen-sink/stylesheets/kitchen-sink.css" rel="stylesheet" type="text/css" />
 <script src="/static/kitchen-sink/javascripts/kitchen-sink.js"></script>
+      </div>
+      <div id="footer">
+        <footer class="ui center aligned container" lang="en">
+          <hr />
+          <p>
+            Copyright © 2016 by PPType, Inc.
+          </p>
+        </footer>
+        <script src="/static/dist/semantic-ui/semantic.min.js"></script>
+        <script src="/static/javascripts/ga.js"></script>
+        <script src="/static/javascripts/jquery.address.js"></script>
+        <script src="/static/javascripts/cookie.js"></script>
+        <script src="/static/javascripts/clipboard.js"></script>
+        <script src="/static/javascripts/less.js"></script>
+        <script src="/static/javascripts/highlight.min.js"></script>
+        <script src="/static/javascripts/default.js"></script>
+        <script src="/static/javascripts/docs.js"></script>
+      </div>
     </div>
-    <div id="footer">
-      <footer class="ui center aligned container" lang="en">
-        <hr />
-        <p>
-          Copyright © 2016 by PPType, Inc.
-        </p>
-      </footer>
-      <script src="/static/dist/semantic-ui/semantic.min.js"></script>
-      <script src="/static/javascripts/ga.js"></script>
-      <script src="/static/javascripts/jquery.address.js"></script>
-      <script src="/static/javascripts/default.js"></script>
-      <script src="/static/javascripts/docs.js"></script>
+    <div class="ui right demo sidebar vertical inverted menu">
+      <a class="header item">File Permissions</a><a class="item">Share on Social</a><a class="item">Share by E-mail</a><a class="item">Edit Permissions</a><a class="item">Delete Permanently</a>
+    </div>
+    <div class="ui left demo vertical inverted labeled icon sidebar menu">
+      <a class="item"><i class="home icon"></i> Home</a><a class="item"><i class="block layout icon"></i> Topics</a><a class="item"><i class="smile icon"></i> Friends</a><a class="item"><i class="calendar icon"></i> History</a><a class="item"><i class="mail icon"></i> Messages</a><a class="item"><i class="chat icon"></i> Discussions</a><a class="item"><i class="trophy icon"></i> Achievements</a><a class="item"><i class="shop icon"></i> Store</a><a class="item"><i class="settings icon"></i> Settings</a>
+    </div>
+    <div class="ui top demo sidebar ui segment">
+      <div class="ui center aligned page grid">
+        <div class="one column row">
+          <div class="sixteen wide column">
+            <h3 class="ui header">
+              New Content Awaits
+            </h3>
+          </div>
+        </div>
+        <div class="three column divided row">
+          <div class="column">
+            <img class="ui wireframe image" src="/images/wireframe/media-paragraph.png" />
+          </div>
+          <div class="column">
+            <img class="ui wireframe image" src="/images/wireframe/media-paragraph.png" />
+          </div>
+          <div class="column">
+            <img class="ui wireframe image" src="/images/wireframe/media-paragraph.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui bottom demo inverted nine item labeled icon sidebar menu">
+      <a class="item"><i class="home icon"></i> Home</a><a class="item"><i class="block layout icon"></i> Topics</a><a class="item"><i class="smile icon"></i> Friends</a><a class="item"><i class="calendar icon"></i> History</a><a class="item"><i class="mail icon"></i> Messages</a><a class="item"><i class="chat icon"></i> Discussions</a><a class="item"><i class="trophy icon"></i> Achievements</a><a class="item"><i class="shop icon"></i> Store</a><a class="item"><i class="settings icon"></i> Settings   </a>
     </div>
   </body>
 </html>
