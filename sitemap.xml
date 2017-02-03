@@ -2,219 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://semantic-ui-forest.com/CNAME</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/humans.txt</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/.nojekyll</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/posts/2014-04-16-new-blog-new-start/</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/posts/2014-05-04-build-static-site-with-nanoc-1/</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/posts/2014-07-25-build-static-site-with-nanoc-2/</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/posts/2015-04-10-2014-summary/</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/posts/2016-04-20-2015-summary/</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/posts/2016-09-08-ppresume-a-new-start/</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/2012-beijing-zhiwuyuan.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/2014-cat.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/2014-xibeixing-binggou.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/2014-xibeixing-dajiaoya.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/2014-xibeixing-jiayuguan.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/2015-guangzhou-shenzhen-xianggang.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/2015-jizhoudao-haiyangguang.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/2015-jizhoudao.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/2015-ningbo-wenzhou-xiapu.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/ppresume/ppresume-guide-1.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/ppresume/ppresume-guide-2.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/ppresume/ppresume-guide-26.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/ppresume/ppresume-guide-27.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/ppresume/ppresume-guide-3.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/ppresume/ppresume-guide-4.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/ppresume/ppresume-guide-9.jpg</loc>
-    <lastmod>2017-01-20</lastmod>
-  </url>
-  <url>
-    <loc>http://semantic-ui-forest.com/static/image/ppresume/ppresume-v2ex-comments.png</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/robots.txt</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/sitemap.xml</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/bootswatch/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/cerulean/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/cosmo/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/cyborg/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/darkly/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/flatly/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/journal/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/lumen/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/paper/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/readable/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/sandstone/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/simplex/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/slate/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/spacelab/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/superhero/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/united/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/bootswatch/yeti/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/semantic-ui/amazon/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/semantic-ui/bootstrap3/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/semantic-ui/chubby/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/semantic-ui/flat/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/semantic-ui/github/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/semantic-ui/material/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/semantic-ui/semantic-ui/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
   <url>
     <loc>http://semantic-ui-forest.com/themes/semantic-ui/twitter/</loc>
-    <lastmod>2017-01-20</lastmod>
+    <lastmod>2017-02-03</lastmod>
   </url>
 </urlset>
 
