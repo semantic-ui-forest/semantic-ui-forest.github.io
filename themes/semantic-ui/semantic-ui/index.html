@@ -67,10 +67,10 @@
   <div class="ui container">
     <h2 class="ui huge header">
       Semantic-UI
+      <div class="sub header">
+        Semantic-UI's default theme
+      </div>
     </h2>
-    <p>
-      Semantic-UI default theme
-    </p>
     <div class="ui four item stackable tabs menu">
       <a class="item active" data-tab="elements">Elements</a><a class="item" data-tab="collections">Collections</a><a class="item" data-tab="views">Views</a><a class="item" data-tab="modules">Modules</a>
     </div>
@@ -5306,10 +5306,10 @@
 <link href="/static/kitchen-sink/stylesheets/kitchen-sink.css" rel="stylesheet" type="text/css" />
 <script src="/static/kitchen-sink/javascripts/kitchen-sink.js"></script>
       </div>
-      <footer>
-        <div class="ui black inverted vertical stripe segment" lang="en">
-          <div class="ui container">
-            <div class="ui stackable grid">
+      <div id="footer">
+        <div class="ui footer black inverted vertical segment" lang="en">
+          <div class="ui left aligned container">
+            <div class="ui stackable inverted grid">
               <div class="three wide column">
                 <h4 class="ui inverted header">
                   Powered By
@@ -5320,10 +5320,10 @@
               </div>
               <div class="three wide column">
                 <h4 class="ui inverted header">
-                  Documentation
+                  Documentation 
                 </h4>
                 <div class="ui inverted link list">
-                  <a class="item" href="http://semantic-ui-forest.com/help" target="_blank">Get Started</a><a class="item" href="http://semantic-ui-forest.com/faq" target="_blank">FAQ</a>
+                  <a class="item" href="http://semantic-ui-forest.com/help" target="_blank">Get Started </a><a class="item" href="http://semantic-ui-forest.com/faq" target="_blank">FAQ</a>
                 </div>
               </div>
               <div class="three wide column">
@@ -5331,16 +5331,23 @@
                   About
                 </h4>
                 <div class="ui inverted link list">
-                  <a class="item" href="http://semantic-ui-forest.com/contact" target="_blank">Contact</a><a class="item" href="http://semantic-ui-forest.com/author" target="_blank">Author</a><a class="item" href="http://semantic-ui-forest.com/license" target="_blank">License</a>
+                  <a class="item" href="http://semantic-ui-forest.com/contact" target="_blank">Contact </a><a class="item" href="http://semantic-ui-forest.com/author" target="_blank">Author</a><a class="item" href="http://semantic-ui-forest.com/license" target="_blank">License </a>
                 </div>
               </div>
-              <div class="seven wide column">
-                <h3 class="ui yellow header">
-                  Semantic-UI-Forest
-                </h3>
-                <p>
-                  Copyright © 2017 by PPType, Inc.
-                </p>
+              <div class="seven wide right floated column">
+                <div class="ui compact left floated inverted segment">
+                  <a class="item" href="/"><img class="ui tiny left floated image" src="/static/logo/gravatar/gravatar.svg" /></a>
+                </div>
+                <div class="ui left floated inverted segment">
+                  <a class="item" href="/">
+                    <h3 class="ui inverted yellow header">
+                      Semantic-UI-Forest
+                    </h3>
+                  </a>
+                  <p>
+                    Copyright © 2017 by PPType, Inc.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -5354,7 +5361,7 @@
         <script src="/static/javascripts/highlight.min.js"></script>
         <script src="/static/javascripts/default.js"></script>
         <script src="/static/javascripts/docs.js"></script>
-      </footer>
+      </div>
     </div>
     <div class="ui right demo sidebar vertical inverted menu">
       <a class="header item">File Permissions</a><a class="item">Share on Social</a><a class="item">Share by E-mail</a><a class="item">Edit Permissions</a><a class="item">Delete Permanently</a>

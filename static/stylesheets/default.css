@@ -6,10 +6,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
 
-footer.center.aligned p {
-  text-align: center; }
-footer p {
-  color: rgba(255, 255, 255, 0.5); }
+footer {
+  margin: 1rem 0; }
+  footer.center.aligned p {
+    text-align: center; }
 
 ul,
 ol {
@@ -78,6 +78,8 @@ nav.ui.menu .ui.container > .right.menu > a.item:last-child {
   background: #FFFFFF; }
 .ui.vertical.stripe.segment {
   padding: 4rem 0; }
+.ui.vertical.segment:first-child {
+  padding-top: 0; }
 .ui.vertical.segment {
   padding: 2rem 0; }
 
@@ -134,6 +136,13 @@ nav.ui.menu .ui.container > .right.menu > a.item:last-child {
   padding-bottom: auto; }
 .ui.demo.container.basic.segment {
   padding-left: 0em; }
+
+/* footer padding */
+.ui.footer.inverted.vertical.segment {
+  padding-bottom: 1em; }
+
+.ui.footer .container .grid .three.column {
+  padding-top: 1.8em; }
 
 /* Width and position on <- 768 - 992 - 1200 -> px screens */
 @media only screen and (min-width: 1200px) {
