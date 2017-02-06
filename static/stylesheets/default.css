@@ -68,10 +68,12 @@ img {
     width: 200px;
     margin: 3rem 0 1rem; }
 
-nav.ui.menu .ui.container > a.item:first-child {
-  margin-left: -1.14286em; }
-nav.ui.menu .ui.container > .right.menu > a.item:last-child {
-  padding-right: 0; }
+nav.ui.menu {
+  border-radius: 0; }
+  nav.ui.menu.ui.container > a.item:first-child {
+    margin-left: -1.14286em; }
+  nav.ui.menu.ui.container > .right.menu > a.item:last-child {
+    padding-right: 0; }
 
 /* Styles for semantic-ui elements */
 .ui.alternative.segment {
