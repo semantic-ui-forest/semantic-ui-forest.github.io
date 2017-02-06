@@ -130,6 +130,10 @@ nav.ui.menu .ui.container > .right.menu > a.item:last-child {
 .right.rail .header {
   margin-top: 3em !important; }
 
+.ui.demo.container .tab .example {
+  margin: 2em 0em;
+  padding: 2em 0em;
+  position: relative; }
 .ui.demo.container .tab .example:last-child:not(.position) {
   padding-bottom: auto; }
 .ui.demo.container.basic.segment {
