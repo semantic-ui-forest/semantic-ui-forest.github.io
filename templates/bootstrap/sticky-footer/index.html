@@ -20,6 +20,57 @@
     <script src="/static/dist/jquery/jquery.min.js"></script>
   </head>
   <body>
-    
+    <div class="ui basic segment">
+      <div class="ui container grid">
+        <div class="row">
+          <div class="column">
+            <h1 class="ui huge header">
+              Sticky footer
+            </h1>
+            <div class="ui divider"></div>
+            <p class="lead">
+              Pin a footer segment to the bottom of the viewport in desktop browsers with this custom HTML and CSS.
+            </p>
+            <p>
+              Use <a href="/templates/bootstrap/sticky-footer-navbar/">the sticky footer with a fixed navbar</a> if need be, too.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui footer basic segment">
+      <div class="ui container">
+        <p>
+          Place sticky footer content here.
+        </p>
+      </div>
+    </div>
+    <style type="text/css">
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .ui.container {
+        max-width: 680px !important;
+      }
+      
+      .ui.container.grid h1.ui.header {
+        margin-top: 1em;
+        font-size: 36px;
+      }
+      .ui.container.grid p.lead {
+        font-size: 21px;
+        line-height: 1.5;
+      }
+      
+      .ui.footer.segment {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 0;
+        background-color: #f5f5f5;
+      }
+    </style>
   </body>
 </html>

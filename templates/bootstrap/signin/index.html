@@ -20,6 +20,84 @@
     <script src="/static/dist/jquery/jquery.min.js"></script>
   </head>
   <body>
-    
+    <div class="ui center aligned grid">
+      <div class="ui container">
+        <h1 class="ui huge header">
+          Please sign in 
+        </h1>
+        <form class="ui large form">
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="user icon"></i><input name="email" placeholder="E-mail address" type="text" />
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i><input name="password" placeholder="Password" type="password" />
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui checkbox">
+              <input class="hidden" tabindex="0" type="checkbox" /><label>Remember me</label>
+            </div>
+          </div>
+          <div class="ui fluid large primary submit button">
+            Sign in
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/static/dist/semantic-ui/semantic.min.js"></script>
+    <style type="text/css">
+      body {
+        background-color: #eee;
+      }
+      
+      .ui.container {
+        margin-top: 6em;
+        max-width: 22em !important;
+      }
+    </style>
+    <script>
+      $(document)
+        .ready(function() {
+          $('.ui.checkbox').checkbox();
+          $('.ui.form')
+            .form({
+              fields: {
+                email: {
+                  identifier  : 'email',
+                  rules: [
+                    {
+                      type   : 'empty',
+                      prompt : 'Please enter your e-mail'
+                    },
+                    {
+                      type   : 'email',
+                      prompt : 'Please enter a valid e-mail'
+                    }
+                  ]
+                },
+                password: {
+                  identifier  : 'password',
+                  rules: [
+                    {
+                      type   : 'empty',
+                      prompt : 'Please enter your password'
+                    },
+                    {
+                      type   : 'length[6]',
+                      prompt : 'Your password must be at least 6 characters'
+                    }
+                  ]
+                }
+              },
+              inline: true,
+              on: 'blur'
+            })
+          ;
+        })
+      ;
+    </script>
   </body>
 </html>
