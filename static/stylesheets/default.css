@@ -1,10 +1,18 @@
 @charset "UTF-8";
 /* Some mixins */
 /* Basic style for some HTML elements */
-body {
+body.default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  background-image: url("/static/images/common/texturetastic_gray.png") !important;
+  background-repeat: repeat !important; }
+  body.default .ui.menu {
+    background: none; }
+  body.default nav.ui.menu {
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0; }
 
 footer.center.aligned p {
   text-align: center; }
@@ -66,21 +74,16 @@ img {
     width: 200px;
     margin: 3rem 0 1rem; }
 
-nav.ui.menu {
-  box-shadow: none;
-  border-radius: 0; }
-  nav.ui.menu.ui.container > a.item:first-child {
-    margin-left: -1.14286em; }
-  nav.ui.menu.ui.container > .right.menu > a.item:last-child {
-    padding-right: 0; }
+nav.ui.menu.ui.container > a.item:first-child {
+  margin-left: -1.14286em; }
+nav.ui.menu.ui.container > .right.menu > a.item:last-child {
+  padding-right: 0; }
 
 /* Styles for semantic-ui elements */
-.ui.alternative.segment {
-  background: #FFFFFF; }
 .ui.vertical.stripe.segment {
   padding: 4rem 0; }
-.ui.vertical.segment {
-  padding: 2rem 0; }
+  .ui.vertical.stripe.segment:nth-child(odd) {
+    background-color: rgba(125, 129, 133, 0.1); }
 
 .ui.menu {
   border-radius: 0;
