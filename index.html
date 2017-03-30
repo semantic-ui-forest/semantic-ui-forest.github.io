@@ -19,7 +19,7 @@
     <link href="/static/dist/semantic-ui/semantic.min.css" rel="stylesheet" type="text/css" />
     <script src="/static/dist/jquery/jquery.min.js"></script>
   </head>
-  <body lang="en">
+  <body>
     <div class="pusher">
       <div id="content">
         <nav class="ui borderless menu">
@@ -51,63 +51,84 @@
             </div>
             <a class="item" href="/templates">Templates</a><a class="item" href="/posts">Blog</a><a class="item" href="/notes">Help</a>
             <div class="right menu">
+              <a class="item" href="https://github.com/semantic-ui-forest"><i class="github icon"></i></a><a class="item desktop-only" href="/atom.xml"><i class="feed icon"></i></a>
               <div class="item desktop-only">
                 <form action="https://www.google.com/search" class="ui form" method="get" target="_blank">
                   <input name="q" type="hidden" value="site:semantic-ui-forest.com" />
-                  <div class="ui left icon input">
+                  <div class="ui left icon transparent input">
                     <input name="q" placeholder="Search..." type="text" /><i class="search icon"></i>
                   </div>
                 </form>
               </div>
-              <a class="item" href="https://github.com/semantic-ui-forest"><i class="github icon"></i></a><a class="item desktop-only" href="/atom.xml"><i class="feed icon"></i></a>
             </div>
           </div>
         </nav><div class="ui vertical center aligned stripe alternative segment">
           <div class="ui container">
             <img class="logo" src="/static/logo/gravatar/gravatar.svg" />
-            <h1>
+            <h1 class="ui header">
               Semantic-UI-Forest
             </h1>
-            <iframe allowtransparency="true" frameborder="0" height="24" scrolling="0" src="https://ghbtns.com/github-btn.html?user=semantic-ui-forest&amp;repo=semantic-ui-forest&amp;type=watch&amp;count=true" width="75"></iframe><iframe allowtransparency="true" frameborder="0" height="24" scrolling="0" src="https://ghbtns.com/github-btn.html?user=semantic-ui-forest&amp;repo=semantic-ui-forest&amp;type=fork&amp;count=true" width="75"></iframe>
             <p>
               Collection of design, themes and templates for <a href="http://semantic-ui.com/">Semantic-UI</a>.
             </p>
+            <div class="ui hidden divider"></div>
+            <a class="ui labeled icon primary button" href="https://semantic-ui-forest.slack.com"><i class="slack icon"></i>Slack</a><a class="ui right labeled icon primary button" href="https://github.com/semantic-ui-forest/"><i class="github icon"></i>Github</a>
           </div>
         </div>
         <div class="ui vertical stripe segment">
           <div class="ui grid stackable container">
             <div class="row">
-              <div class="column">
-                <h2>
-                  Features
-                </h2>
-              </div>
-            </div>
-            <div class="row">
               <div class="ui three column stackable divided grid">
                 <div class="row">
                   <div class="column">
-                    <h4>
-                      Open Source
-                    </h4>
+                    <h3 class="ui header">
+                      <i class="green paint brush icon"></i>Themes
+                    </h3>
                     <p>
-                      Semantic-UI-Forest themes and templates are released under BSD 3-clause License.
+                      Prebuilt and ported 20+ packed themes from Semantic-UI and the charming <a href="https://bootswatch.com/">Bootswatch</a>.
                     </p>
                   </div>
                   <div class="column">
-                    <h4>
-                      Simple
-                    </h4>
+                    <h3 class="ui header">
+                      <i class="green dashboard icon"></i>Templates
+                    </h3>
                     <p>
-                      Simply download a CSS file and replace the one in <a href="http://semantic-ui.com/">Semantic-UI</a>.
+                      Packed and ported 20+ templates from Semantic-UI and <a href="https://getbootstrap.com/getting-started/#examples">Bootstrap</a> examples.
                     </p>
                   </div>
                   <div class="column">
-                    <h4>
-                      Updated
-                    </h4>
+                    <h3 class="ui header">
+                      <i class="green laptop icon"></i>Awesome
+                    </h3>
                     <p>
-                      All themes and templates are tuned for lastet Semantic-UI release.
+                      Drafted an <a href="https://github.com/semantic-ui-forest/awesome-semantic-ui">awesome list</a> of documentations, libraries, tools and sites built with Semantic-UI.
+                    </p>
+                  </div>
+                </div>
+                <div class="ui hidden divider"></div>
+                <div class="row">
+                  <div class="column">
+                    <h3 class="ui header">
+                      <i class="green code icon"></i>Free & Open Source
+                    </h3>
+                    <p>
+                      All free semantic-ui-forest themes and templates are released under <a href="https://github.com/semantic-ui-forest/forest-themes/blob/master/LICENSE">BSD 3-clause</a> license.
+                    </p>
+                  </div>
+                  <div class="column">
+                    <h3 class="ui header">
+                      <i class="green check icon"></i>Easy & Simple
+                    </h3>
+                    <p>
+                      Provide preview and download links for each theme and template, which will <b>save you tons of time</b>.
+                    </p>
+                  </div>
+                  <div class="column">
+                    <h3 class="ui header">
+                      <i class="green star icon"></i>Tuned & Updated
+                    </h3>
+                    <p>
+                      All themes and templates are tuned and updated based on the lastest stable version of Semantic-UI.
                     </p>
                   </div>
                 </div>
@@ -264,7 +285,7 @@
         </style>
       </div>
       <footer>
-        <div class="ui black inverted vertical stripe segment" lang="en">
+        <div class="ui black inverted vertical stripe segment">
           <div class="ui container">
             <div class="ui stackable grid">
               <div class="three wide column">

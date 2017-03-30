@@ -17,8 +17,6 @@ ol {
 
 p {
   line-height: 1.5rem; }
-  [lang='cn'] p {
-    text-align: justify; }
 
 hr {
   display: block;
@@ -69,6 +67,7 @@ img {
     margin: 3rem 0 1rem; }
 
 nav.ui.menu {
+  box-shadow: none;
   border-radius: 0; }
   nav.ui.menu.ui.container > a.item:first-child {
     margin-left: -1.14286em; }
@@ -199,22 +198,6 @@ nav.ui.menu {
 
   #content .vertical.segment .container {
     width: auto; } }
-/* Enable smallcaps and oldstyle-number OpenType features for English */
-[lang='en'] {
-  -moz-font-feature-settings: "smcp" 0, "onum" 1;
-  -ms-font-feature-settings: "smcp" 0, "onum" 1;
-  -o-font-feature-settings: "smcp" 0, "onum" 1;
-  -webkit-font-feature-settings: "smcp" 0, "onum" 1;
-  font-feature-settings: "smcp" 0, "onum" 1; }
-
-/* Disable smallcaps and oldstyle-number OpenType features for Chinese */
-[lang='cn'] {
-  -moz-font-feature-settings: "smcp" 0, "onum" 0;
-  -ms-font-feature-settings: "smcp" 0, "onum" 0;
-  -o-font-feature-settings: "smcp" 0, "onum" 0;
-  -webkit-font-feature-settings: "smcp" 0, "onum" 0;
-  font-feature-settings: "smcp" 0, "onum" 0; }
-
 /* TeX and LaTeX Logo in HTML */
 .tex sub {
   text-transform: uppercase;
