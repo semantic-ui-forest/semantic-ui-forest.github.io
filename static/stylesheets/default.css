@@ -5,7 +5,7 @@ body.default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  background-image: url("/static/images/common/texturetastic_gray.png") !important;
+  background-image: url("/static/images/common/concrete_seamless.png") !important;
   background-repeat: repeat !important; }
   body.default .ui.menu {
     background: none; }
@@ -14,10 +14,8 @@ body.default {
     box-shadow: none;
     margin-bottom: 0; }
 
-footer.center.aligned p {
-  text-align: center; }
-footer p {
-  color: rgba(255, 255, 255, 0.5); }
+footer {
+  background-color: rgba(64, 64, 64, 0.16); }
 
 ul,
 ol {
