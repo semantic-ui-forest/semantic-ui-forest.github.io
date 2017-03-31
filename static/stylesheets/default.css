@@ -5,17 +5,19 @@ body.default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  background-image: url("/static/images/common/concrete_seamless.png") !important;
+  background-image: url("/static/images/common/snow.png") !important;
   background-repeat: repeat !important; }
   body.default .ui.menu {
     background: none; }
   body.default nav.ui.menu {
-    border-radius: 0;
     box-shadow: none;
     margin-bottom: 0; }
-
-footer {
-  background-color: rgba(64, 64, 64, 0.08); }
+    body.default nav.ui.menu .item:last-child {
+      margin-right: -1.1428rem; }
+    body.default nav.ui.menu .brand.item {
+      margin-left: -1.1428rem; }
+      body.default nav.ui.menu .brand.item img {
+        margin-right: 1rem; }
 
 ul,
 ol {
@@ -80,11 +82,10 @@ nav.ui.menu.ui.container > .right.menu > a.item:last-child {
 /* Styles for semantic-ui elements */
 .ui.vertical.stripe.segment {
   padding: 4rem 0; }
-  .ui.vertical.stripe.segment:nth-child(odd) {
-    background-color: rgba(125, 129, 133, 0.1); }
+  .ui.vertical.stripe.segment:nth-of-type(even) {
+    background-color: rgba(4, 4, 8, 0.04); }
 
 .ui.menu {
-  border-radius: 0;
   box-shadow: none;
   margin-bottom: 0;
   -moz-font-feature-settings: "smcp" 0, "onum" 0;
@@ -140,10 +141,6 @@ nav.ui.menu.ui.container > .right.menu > a.item:last-child {
   padding-bottom: auto; }
 .ui.demo.container.basic.segment {
   padding-left: 0em; }
-
-/* Card's image border radius */
-.ui.cards .ui.card .image a > img {
-  border-radius: 4px 4px 0 0; }
 
 /* Width and position on <- 768 - 992 - 1200 -> px screens */
 /* TeX and LaTeX Logo in HTML */

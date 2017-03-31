@@ -14,9 +14,10 @@
     <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon" />
     <meta content="#ffffff" name="theme-color" />
     <title>Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI.</title>
+    <link href="/static/dist/semantic-ui/semantic.forest.min.css" rel="stylesheet" type="text/css" />
+    <link href="/static/stylesheets/forest-font.css" rel="stylesheet" type="text/css" />
     <link href="/static/stylesheets/default.css" rel="stylesheet" type="text/css" />
     <link href="/static/stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" />
-    <link href="/static/dist/semantic-ui/semantic.min.css" rel="stylesheet" type="text/css" />
     <script src="/static/dist/jquery/jquery.min.js"></script>
   </head>
   <body class="default">
@@ -24,7 +25,7 @@
       <div id="content">
         <nav class="ui borderless menu">
           <div class="ui container">
-            <a class="item" href="/"><img src="/static/logo/gravatar/gravatar.svg" /></a><a class="item" href="/themes">Themes</a><a class="item" href="/templates">Templates</a><a class="item" href="/blog">Blog</a><a class="item" href="/help">Help</a>
+            <a class="brand item" href="/"><img src="/static/logo/gravatar/gravatar.svg" />Semantic-UI-Forest</a><a class="item" href="/themes">Themes</a><a class="item" href="/templates">Templates</a><a class="item" href="/blog">Blog</a><a class="item" href="/help">Help</a>
             <div class="right menu">
               <a class="item" href="https://github.com/semantic-ui-forest"><i class="github icon"></i></a><a class="item desktop-only" href="/atom.xml"><i class="feed icon"></i></a>
               <div class="item desktop-only">
@@ -37,407 +38,462 @@
               </div>
             </div>
           </div>
-        </nav><div class="ui center vertical stripe segment">
+        </nav><div class="ui vertical stripe segment">
           <div class="ui container">
-            <h2 class="ui huge red header">
+            <h1 class="ui header">
               Templates
               <div class="sub header">
                 Collection of sample templates to demonstrate the power of Semantic-UI.
               </div>
-            </h2>
-            <div class="ui two item stackable tabs menu">
-              <a class="item active" data-tab="bootstrap">Bootstrap</a><a class="item" data-tab="semantic-ui">Semantic-UI</a>
+            </h1>
+          </div>
+        </div>
+        <div class="ui vertical stripe segment">
+          <div class="ui divided relaxed grid stackable container">
+            <div class="row">
+              <article class="twelve wide column">
+                <div class="ui tab active" data-tab="bootstrap">
+                  <h2 class="ui dividing header">
+                    Using the framework
+                  </h2>
+                  <div class="ui two stackable doubling cards" style="margin-top: 0.875rem !important">
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/starter-template/"><img src="/static/images/templates/bootstrap/thumbnails/starter-template-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Starter template
+                        </div>
+                        <div class="description">
+                          Nothing but the basics: compiled CSS and JavaScript along with a container.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/starter-template/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/starter-template.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/theme/"><img src="/static/images/templates/bootstrap/thumbnails/theme-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Bootstrap theme
+                        </div>
+                        <div class="description">
+                          Load the optional Bootstrap theme for a visually enhanced experience.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/theme/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/theme.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/grid/"><img src="/static/images/templates/bootstrap/thumbnails/grid-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Grids
+                        </div>
+                        <div class="description">
+                          Multiple examples of grid layouts with all three tiers, nesting, stackable and more.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/grid/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/grid.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/jumbotron/"><img src="/static/images/templates/bootstrap/thumbnails/jumbotron-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Jumbotron
+                        </div>
+                        <div class="description">
+                          Build around the jumbotron with a navbar and some basic grid columns.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/jumbotron/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/jumbotron.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/jumbotron-narrow/"><img src="/static/images/templates/bootstrap/thumbnails/jumbotron-narrow-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Narrow jumbotron
+                        </div>
+                        <div class="description">
+                          Build a more custom page by narrowing the default container and jumbotron.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/jumbotron-narrow/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/jumbotron-narrow.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui hidden divider"></div>
+                  <h2 class="ui dividing header">
+                    Navbars in action
+                  </h2>
+                  <div class="ui two stackable doubling cards">
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/navbar/"><img src="/static/images/templates/bootstrap/thumbnails/navbar-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Navbar
+                        </div>
+                        <div class="description">
+                          Super basic template that includes the navbar along with some additional content.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/navbar/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/navbar.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/navbar-static-top/"><img src="/static/images/templates/bootstrap/thumbnails/navbar-static-top-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Static top navbar
+                        </div>
+                        <div class="description">
+                          Super basic template with a static top navbar along with some additional content.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/navbar-static-top/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/navbar-static-top.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/navbar-fixed-top/"><img src="/static/images/templates/bootstrap/thumbnails/navbar-fixed-top-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Fixed navbar
+                        </div>
+                        <div class="description">
+                          Super basic template with a fixed top navbar along with some additional content.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/navbar-fixed-top/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/navbar-fixed-top.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui hidden divider"></div>
+                  <h2 class="ui dividing header">
+                    Custom components
+                  </h2>
+                  <div class="ui two stackable doubling cards">
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/cover/"><img src="/static/images/templates/bootstrap/thumbnails/cover-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Cover
+                        </div>
+                        <div class="description">
+                          A one-page template for building simple and beautiful home pages.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/cover/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/cover.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/carousel/"><img src="/static/images/templates/bootstrap/thumbnails/carousel-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Carousel
+                        </div>
+                        <div class="description">
+                          Customize the navbar and carousel, then add some new components.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/carousel/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/carousel.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/blog/"><img src="/static/images/templates/bootstrap/thumbnails/blog-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Blog
+                        </div>
+                        <div class="description">
+                          Simple two-column blog layout with custom navigation, header, and type.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/blog/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/blog.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/dashboard/"><img src="/static/images/templates/bootstrap/thumbnails/dashboard-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Dashboard
+                        </div>
+                        <div class="description">
+                          Basic structure for an admin dashboard with fixed sidebar and navbar.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/dashboard/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/dashboard.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/signin/"><img src="/static/images/templates/bootstrap/thumbnails/signin-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Sign-in page
+                        </div>
+                        <div class="description">
+                          Custom form layout and design for a simple sign in form with validation.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/signin/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/signin.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/justified-nav/"><img src="/static/images/templates/bootstrap/thumbnails/justified-nav-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Justified nav
+                        </div>
+                        <div class="description">
+                          Create a custom navbar with justified links. Heads up!
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/justified-nav/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/justified-nav.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/sticky-footer/"><img src="/static/images/templates/bootstrap/thumbnails/sticky-footer-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Sticky footer
+                        </div>
+                        <div class="description">
+                          Attach a footer to the bottom of the viewport when the content is shorter than it.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/sticky-footer/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/sticky-footer.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/sticky-footer-navbar/"><img src="/static/images/templates/bootstrap/thumbnails/sticky-footer-navbar-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Sticky footer with navbar
+                        </div>
+                        <div class="description">
+                          Attach a footer to the bottom of the viewport with a fixed navbar at the top.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/sticky-footer-navbar/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/sticky-footer-navbar.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui hidden divider"></div>
+                  <h2 class="ui dividing header">
+                    Experiments
+                  </h2>
+                  <div class="ui two stackable doubling cards">
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/non-responsive/"><img src="/static/images/templates/bootstrap/thumbnails/non-responsive-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Non responsive Semantic-UI
+                        </div>
+                        <div class="description">
+                          Easily disable the responsiveness of Semantic-UI.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/non-responsive/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/non-responsive.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/bootstrap/offcanvas/"><img src="/static/images/templates/bootstrap/thumbnails/offcanvas-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Off-canvas
+                        </div>
+                        <div class="description">
+                          Build toggleable off-canvas navigation menus from all four sides for use with Semantic-UI.
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/bootstrap/offcanvas/">Preview</a><a class="ui button item" href="/static/download/templates/bootstrap/offcanvas.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui tab" data-tab="semantic-ui">
+                  <h2 class="ui dividing header">
+                    Pages
+                  </h2>
+                  <div class="ui two stackable doubling cards" style="margin-top: 0.875rem !important">
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/semantic-ui/homepage/"><img src="/static/images/templates/semantic-ui/thumbnails/homepage-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Homepage
+                        </div>
+                        <div class="description">
+                          A simple responsive homepage design with sidebar
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/semantic-ui/homepage/">Preview</a><a class="ui button item" href="/static/download/templates/semantic-ui/homepage.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/semantic-ui/sticky/"><img src="/static/images/templates/semantic-ui/thumbnails/sticky-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Sticky Menus
+                        </div>
+                        <div class="description">
+                          Using visibility API to fix content after passing position in page
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/semantic-ui/sticky/">Preview</a><a class="ui button item" href="/static/download/templates/semantic-ui/sticky.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/semantic-ui/fixed/"><img src="/static/images/templates/semantic-ui/thumbnails/fixed-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Fixed Menu
+                        </div>
+                        <div class="description">
+                          Using a fixed menu with page content
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/semantic-ui/fixed/">Preview</a><a class="ui button item" href="/static/download/templates/semantic-ui/fixed.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui raised link card">
+                      <div class="image">
+                        <a href="/templates/semantic-ui/login/"><img src="/static/images/templates/semantic-ui/thumbnails/login-1280x800.png" /></a>
+                      </div>
+                      <div class="content">
+                        <div class="header">
+                          Login Form
+                        </div>
+                        <div class="description">
+                          A full-screen login form
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui two item menu">
+                          <a class="ui button item" href="/templates/semantic-ui/login/">Preview</a><a class="ui button item" href="/static/download/templates/semantic-ui/login.tar.gz">Download</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <aside class="four wide column">
+                <div class="ui vertical fluid menu">
+                  <a class="item active" data-tab="bootstrap">Bootstrap</a><a class="item" data-tab="semantic-ui">Semantic-UI</a>
+                </div>
+              </aside>
             </div>
           </div>
         </div>
-        <div class="ui container basic segment">
-          <div class="ui tab active" data-tab="bootstrap">
-            <h2 class="ui header">
-              Using the framework
-            </h2>
-            <div class="ui three stackable doubling cards">
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/starter-template/"><img src="/static/images/templates/bootstrap/thumbnails/starter-template-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Starter template
-                  </div>
-                  <div class="description">
-                    Nothing but the basics: compiled CSS and JavaScript along with a container.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/starter-template/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/starter-template.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/theme/"><img src="/static/images/templates/bootstrap/thumbnails/theme-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Bootstrap theme
-                  </div>
-                  <div class="description">
-                    Load the optional Bootstrap theme for a visually enhanced experience.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/theme/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/theme.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/grid/"><img src="/static/images/templates/bootstrap/thumbnails/grid-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Grids
-                  </div>
-                  <div class="description">
-                    Multiple examples of grid layouts with all three tiers, nesting, stackable and more.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/grid/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/grid.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/jumbotron/"><img src="/static/images/templates/bootstrap/thumbnails/jumbotron-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Jumbotron
-                  </div>
-                  <div class="description">
-                    Build around the jumbotron with a navbar and some basic grid columns.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/jumbotron/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/jumbotron.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/jumbotron-narrow/"><img src="/static/images/templates/bootstrap/thumbnails/jumbotron-narrow-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Narrow jumbotron
-                  </div>
-                  <div class="description">
-                    Build a more custom page by narrowing the default container and jumbotron.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/jumbotron-narrow/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/jumbotron-narrow.tar.gz">Download</a>
-                </div>
-              </div>
-            </div>
-            <div class="ui hidden section divider"></div>
-            <h2 class="ui header">
-              Navbars in action
-            </h2>
-            <div class="ui three stackable doubling cards">
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/navbar/"><img src="/static/images/templates/bootstrap/thumbnails/navbar-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Navbar
-                  </div>
-                  <div class="description">
-                    Super basic template that includes the navbar along with some additional content.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/navbar/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/navbar.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/navbar-static-top/"><img src="/static/images/templates/bootstrap/thumbnails/navbar-static-top-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Static top navbar
-                  </div>
-                  <div class="description">
-                    Super basic template with a static top navbar along with some additional content.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/navbar-static-top/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/navbar-static-top.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/navbar-fixed-top/"><img src="/static/images/templates/bootstrap/thumbnails/navbar-fixed-top-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Fixed navbar
-                  </div>
-                  <div class="description">
-                    Super basic template with a fixed top navbar along with some additional content.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/navbar-fixed-top/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/navbar-fixed-top.tar.gz">Download</a>
-                </div>
-              </div>
-            </div>
-            <div class="ui hidden section divider"></div>
-            <h2 class="ui header">
-              Custom components
-            </h2>
-            <div class="ui three stackable doubling cards">
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/cover/"><img src="/static/images/templates/bootstrap/thumbnails/cover-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Cover
-                  </div>
-                  <div class="description">
-                    A one-page template for building simple and beautiful home pages.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/cover/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/cover.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/carousel/"><img src="/static/images/templates/bootstrap/thumbnails/carousel-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Carousel
-                  </div>
-                  <div class="description">
-                    Customize the navbar and carousel, then add some new components.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/carousel/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/carousel.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/blog/"><img src="/static/images/templates/bootstrap/thumbnails/blog-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Blog
-                  </div>
-                  <div class="description">
-                    Simple two-column blog layout with custom navigation, header, and type.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/blog/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/blog.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/dashboard/"><img src="/static/images/templates/bootstrap/thumbnails/dashboard-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Dashboard
-                  </div>
-                  <div class="description">
-                    Basic structure for an admin dashboard with fixed sidebar and navbar.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/dashboard/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/dashboard.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/signin/"><img src="/static/images/templates/bootstrap/thumbnails/signin-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Sign-in page
-                  </div>
-                  <div class="description">
-                    Custom form layout and design for a simple sign in form with validation.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/signin/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/signin.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/justified-nav/"><img src="/static/images/templates/bootstrap/thumbnails/justified-nav-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Justified nav
-                  </div>
-                  <div class="description">
-                    Create a custom navbar with justified links. Heads up!
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/justified-nav/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/justified-nav.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/sticky-footer/"><img src="/static/images/templates/bootstrap/thumbnails/sticky-footer-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Sticky footer
-                  </div>
-                  <div class="description">
-                    Attach a footer to the bottom of the viewport when the content is shorter than it.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/sticky-footer/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/sticky-footer.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/sticky-footer-navbar/"><img src="/static/images/templates/bootstrap/thumbnails/sticky-footer-navbar-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Sticky footer with navbar
-                  </div>
-                  <div class="description">
-                    Attach a footer to the bottom of the viewport with a fixed navbar at the top.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/sticky-footer-navbar/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/sticky-footer-navbar.tar.gz">Download</a>
-                </div>
-              </div>
-            </div>
-            <div class="ui hidden section divider"></div>
-            <h2 class="ui header">
-              Experiments
-            </h2>
-            <div class="ui three stackable doubling cards">
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/non-responsive/"><img src="/static/images/templates/bootstrap/thumbnails/non-responsive-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Non responsive Semantic-UI
-                  </div>
-                  <div class="description">
-                    Easily disable the responsiveness of Semantic-UI.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/non-responsive/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/non-responsive.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/bootstrap/offcanvas/"><img src="/static/images/templates/bootstrap/thumbnails/offcanvas-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Off-canvas
-                  </div>
-                  <div class="description">
-                    Build toggleable off-canvas navigation menus from all four sides for use with Semantic-UI.
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/bootstrap/offcanvas/">Preview</a><a class="ui button" href="/static/download/templates/bootstrap/offcanvas.tar.gz">Download</a>
-                </div>
-              </div>
-            </div>
-            <div class="ui hidden section divider"></div>
-          </div>
-          <div class="ui tab" data-tab="semantic-ui">
-            <h2 class="ui header">
-              Pages
-            </h2>
-            <div class="ui three stackable doubling cards">
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/semantic-ui/homepage/"><img src="/static/images/templates/semantic-ui/thumbnails/homepage-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Homepage
-                  </div>
-                  <div class="description">
-                    A simple responsive homepage design with sidebar
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/semantic-ui/homepage/">Preview</a><a class="ui button" href="/static/download/templates/semantic-ui/homepage.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/semantic-ui/sticky/"><img src="/static/images/templates/semantic-ui/thumbnails/sticky-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Sticky Menus
-                  </div>
-                  <div class="description">
-                    Using visibility API to fix content after passing position in page
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/semantic-ui/sticky/">Preview</a><a class="ui button" href="/static/download/templates/semantic-ui/sticky.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/semantic-ui/fixed/"><img src="/static/images/templates/semantic-ui/thumbnails/fixed-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Fixed Menu
-                  </div>
-                  <div class="description">
-                    Using a fixed menu with page content
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/semantic-ui/fixed/">Preview</a><a class="ui button" href="/static/download/templates/semantic-ui/fixed.tar.gz">Download</a>
-                </div>
-              </div>
-              <div class="ui card">
-                <div class="image">
-                  <a href="/templates/semantic-ui/login/"><img src="/static/images/templates/semantic-ui/thumbnails/login-1280x800.png" /></a>
-                </div>
-                <div class="content">
-                  <div class="header">
-                    Login Form
-                  </div>
-                  <div class="description">
-                    A full-screen login form
-                  </div>
-                </div>
-                <div class="ui two bottom attached buttons">
-                  <a class="ui button" href="/templates/semantic-ui/login/">Preview</a><a class="ui button" href="/static/download/templates/semantic-ui/login.tar.gz">Download</a>
-                </div>
-              </div>
-            </div>
-            <div class="ui hidden section divider"></div>
-          </div>
-        </div>
+        <style type="text/css">
+          .ui.link.card:hover {
+            cursor: default;
+          }
+        </style>
       </div>
       <footer>
         <div class="ui vertical stripe segment">
@@ -449,7 +505,7 @@
                 </h3>
                 <div class="ui list">
                   <div class="item">
-                    Made with <i class="heart icon"></i> by PPType, Inc
+                    Made with <i class="heart icon"></i> by PPType, Inc.
                   </div>
                   <div class="item">
                     © 2017
