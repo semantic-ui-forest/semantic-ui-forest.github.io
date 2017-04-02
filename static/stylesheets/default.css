@@ -12,19 +12,14 @@ body.default {
   body.default nav.ui.menu {
     box-shadow: none;
     margin-bottom: 0; }
-    body.default nav.ui.menu .item:last-child {
-      margin-right: -1.1428rem; }
     body.default nav.ui.menu .brand.item {
-      margin-left: -1.1428rem; }
-      body.default nav.ui.menu .brand.item img {
-        margin-right: 1rem; }
+      padding-left: 0; }
+      body.default nav.ui.menu .brand.item:hover {
+        background: none; }
 
 ul,
 ol {
   padding-left: 2rem; }
-
-p {
-  line-height: 1.5rem; }
 
 hr {
   display: block;
@@ -83,7 +78,10 @@ nav.ui.menu.ui.container > .right.menu > a.item:last-child {
 .ui.vertical.stripe.segment {
   padding: 3rem 0; }
   .ui.vertical.stripe.segment:nth-of-type(even) {
-    background-color: rgba(4, 4, 8, 0.04); }
+    background-color: rgba(0, 0, 0, 0.03); }
+
+footer > .ui.vertical.stripe.segment {
+  background-color: rgba(0, 0, 0, 0.06); }
 
 .ui.menu {
   box-shadow: none;
@@ -172,12 +170,6 @@ nav.ui.menu.ui.container > .right.menu > a.item:last-child {
   margin-top: 2rem; }
 
 @media only screen and (max-width: 767px) {
-  .desktop-only {
-    display: none; }
-
-  .ui.menu .item.desktop-only {
-    display: none; }
-
   .ui[class*="padded"].segment {
     padding: 1.5rem; }
 
