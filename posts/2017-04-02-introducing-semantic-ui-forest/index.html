@@ -25,7 +25,7 @@
       <div id="content">
         <nav class="ui borderless menu">
           <div class="ui container">
-            <a class="brand item" href="/"><img src="/static/logo/gravatar/gravatar.svg" /></a><a class="item" href="/themes">Themes</a><a class="item" href="/templates">Templates</a><a class="item" href="/blog">Blog</a><a class="item" href="/help">Help</a>
+            <a class="brand item" href="/"><img src="/static/logo/gravatar/gravatar.svg" /></a><a class="item" href="/themes">Themes</a><a class="item" href="/templates">Templates</a><a class="item" href="/blog">Blog</a>
             <div class="right menu">
               <a class="item" href="https://github.com/semantic-ui-forest"><i class="github icon"></i></a><a class="item" href="/atom.xml"><i class="feed icon"></i></a>
               <div class="item">
@@ -39,72 +39,146 @@
             </div>
           </div>
         </nav><div class="ui vertical stripe segment">
-          <div class="ui container">
-            <h1 class="ui header">
-              Introducing Semantic-UI-Forest
-              <div class="sub header quote"></div>
-            </h1>
-          </div>
+  <div class="ui container">
+    <h1 class="ui header">
+      Introducing Semantic-UI-Forest
+      <div class="sub header quote"></div>
+    </h1>
+  </div>
+</div>
+<div class="ui vertical stripe segment">
+  <div class="ui divided grid stackable container">
+    <div class="row">
+      <article class="eleven wide column"><h2 id="overview">Overview</h2>
+<blockquote>
+<p>The goal of Semantic UI is to narrow the divide between how we create meaning personally, through language, and how we construct meaning for computers.</p>
+<p>— <a href="http://learnsemantic.com/preface/introduction.html" class="uri">http://learnsemantic.com/preface/introduction.html</a></p>
+</blockquote>
+<p><a href="https://semantic-ui.com">Semantic-UI</a> is a UI component framework based around useful principles from natural language. As its motto said, “User interface is the language of the web.” It allows developers to build beautiful websites fast, with <strong>concise HTML</strong>, <strong>intuitive JavaScript</strong>, and <strong>simplified debugging</strong>, helping make front-end development a delightful experience.</p>
+<p>Key features of Semantic-UI:</p>
+<ul>
+<li>50+ UI elements</li>
+<li>3000 + CSS variables</li>
+<li>3 Levels of variable inheritance (similar to Sublime Text)</li>
+<li>Built with EM values for responsive design</li>
+<li>Flexbox friendly</li>
+</ul>
+<h3 id="compared-with-bootstrap">Compared with Bootstrap?</h3>
+<p>Now it’s the time to ask that very important question — of course I know that you will finally shout it out loud — “Tell me, what’s the difference between <a href="https://getbootstrap.com/">Bootstrap</a> and Semantic-UI?” Aha, this is a huge question. Actually, Semantic-UI has already show us an official <a href="http://learnsemantic.com/preface/whats-different.html">answer</a>.</p>
+<p>Bootstrap has a much much more mature ecosystem than Semantic-UI — it has tons of free and commercial templates and themes, while Semantic-UI has few — and that’s why we spent several hundreds of hours building this website for you, smart fellow developers.</p>
+<p>Besides, in our own experience, we feel more delightful when developing with Semantic-UI. Maybe code speaks more than words:</p>
+<h3 id="grid">Grid</h3>
+<p>Semantic-UI:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;main</span><span class="ot"> class=</span><span class="st">&quot;ui three column grid&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;aside</span><span class="ot"> class=</span><span class="st">&quot;column&quot;</span><span class="kw">&gt;</span>1<span class="kw">&lt;/aside&gt;</span>
+  <span class="kw">&lt;section</span><span class="ot"> class=</span><span class="st">&quot;column&quot;</span><span class="kw">&gt;</span>2<span class="kw">&lt;/section&gt;</span>
+  <span class="kw">&lt;section</span><span class="ot"> class=</span><span class="st">&quot;column&quot;</span><span class="kw">&gt;</span>3<span class="kw">&lt;/section&gt;</span>
+<span class="kw">&lt;/main&gt;</span></code></pre></div>
+<div class="ui horizontal divider">VS</div>
+<p>Bootstrap:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;col-lg-4&quot;</span><span class="kw">&gt;</span>1<span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;col-lg-4&quot;</span><span class="kw">&gt;</span>2<span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;col-lg-4&quot;</span><span class="kw">&gt;</span>3<span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+<h3 id="menu">Menu</h3>
+<p>Semantic-UI:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;nav</span><span class="ot"> class=</span><span class="st">&quot;ui menu&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;h3</span><span class="ot"> class=</span><span class="st">&quot;header item&quot;</span><span class="kw">&gt;</span>Title<span class="kw">&lt;/h3&gt;</span>
+  <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;active item&quot;</span><span class="kw">&gt;</span>Home<span class="kw">&lt;/a&gt;</span>
+  <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;item&quot;</span><span class="kw">&gt;</span>Link<span class="kw">&lt;/a&gt;</span>
+  <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;item&quot;</span><span class="kw">&gt;</span>Link<span class="kw">&lt;/a&gt;</span>
+  <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;right floated text item&quot;</span><span class="kw">&gt;</span>
+    Signed in as <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>user<span class="kw">&lt;/a&gt;</span>
+  <span class="kw">&lt;/span&gt;</span>
+<span class="kw">&lt;/nav&gt;</span></code></pre></div>
+<div class="ui horizontal divider">VS</div>
+<p>Bootstrap:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;navbar&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;a</span><span class="ot"> class=</span><span class="st">&quot;navbar-brand&quot;</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Title<span class="kw">&lt;/a&gt;</span>
+  <span class="kw">&lt;ul</span><span class="ot"> class=</span><span class="st">&quot;nav navbar-nav&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;li</span><span class="ot"> class=</span><span class="st">&quot;active&quot;</span><span class="kw">&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Home<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Link<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="kw">&lt;li&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span>Link<span class="kw">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="kw">&lt;p</span><span class="ot"> class=</span><span class="st">&quot;navbar-text pull-right&quot;</span><span class="kw">&gt;</span>Signed in as <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="ot"> class=</span><span class="st">&quot;navbar-link&quot;</span><span class="kw">&gt;</span>User<span class="kw">&lt;/a&gt;&lt;/p&gt;</span>
+  <span class="kw">&lt;/ul&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+<h3 id="button">Button</h3>
+<p>Semantic UI:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui large button&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;i</span><span class="ot"> class=</span><span class="st">&quot;heart icon&quot;</span><span class="kw">&gt;&lt;/i&gt;</span>
+  Like it
+<span class="kw">&lt;/button&gt;</span></code></pre></div>
+<div class="ui horizontal divider">VS</div>
+<p>Bootstrap:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;button</span><span class="ot"> type=</span><span class="st">&quot;button&quot;</span><span class="ot"> class=</span><span class="st">&quot;btn btn-primary btn-lg&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;glyphicon glyphicon-heart&quot;</span><span class="kw">&gt;&lt;/span&gt;</span>
+  Like
+<span class="kw">&lt;/button&gt;</span></code></pre></div>
+<h2 id="semantic-ui-forest">Semantic-UI-Forest</h2>
+<p>Semantic-UI-Forest provides collection of design, themes and templates for Semantic-UI.</p>
+<p>Years ago, when I first met Semantic-UI, I suddenly fall in love with it, made several websites with it. I have to say that it’s quite a delightful experience. And soon Semantic-UI becames my favourite frontend CSS framework.</p>
+<p>As we said before, compared with Bootstrap, the ecosystem of Semantic-UI is small, so we decided to make some contributions, and then Semantic-UI-Forest was born. With several hundreds hours of work, it grew up to present with 22 well-tested templates and 24 beautiful themes — and yes, it’s all free, released under BSD 3-clause license.</p>
+<h3 id="themes">Themes</h3>
+<p>We have ported all 16 themes on famous <a href="https://bootswatch.com/">Bootswatch</a>, from Bootstrap to Semantic-UI, so you can use these most popular themes along with Semantic-UI right now. <a href="http://semantic-ui-forest.com/themes/bootswatch/cerulean/">Cerulean</a>, <a href="http://semantic-ui-forest.com/themes/bootswatch/cyborg/">Cyborg</a>, <a href="http://semantic-ui-forest.com/themes/bootswatch/journal/">Journal</a>, <a href="http://semantic-ui-forest.com/themes/bootswatch/superhero/">Superhero</a>, <a href="http://semantic-ui-forest.com/themes/bootswatch/united/">United</a>, etc., all these gorgeous themes are available for Semantic-UI. We’ve also prebuilt some Semantic-UI’s bundled theme for you, such as <a href="http://localhost:3000/themes/semantic-ui/amazon/">Amazon</a>, <a href="http://localhost:3000/themes/semantic-ui/github/">Github</a>, <a href="http://localhost:3000/themes/semantic-ui/material/">Material</a>, <a href="http://localhost:3000/themes/semantic-ui/twitter/">Twitter</a>, etc.</p>
+<p>It’s also ultra easy to apply themes. You could just click the <code>Download</code> button, and replace the original <code>semantic.min.css</code> with the CSS files of the theme you’ve downloaded, that’s it. With a new theme, your site would become unique, fresh and more impressive! Check it out by yourself: <a href="http://semantic-ui.forest.com/themes"><a href="http://semantic-ui.forest.com/themes" class="uri">http://semantic-ui.forest.com/themes</a></a>.</p>
+<h3 id="templates">Templates</h3>
+<p>For those looking for templates to start a prototype quickly, we’ve also ported all official Bootstrap <a href="https://getbootstrap.com/getting-started/#examples">examples</a> to Semantic-UI. Popular layouts such as <a href="http://semantic-ui-forest.com/templates/bootstrap/blog/">blog</a>, <a href="http://semantic-ui-forest.com/templates/bootstrap/dashboard/">dashboard</a>, <a href="http://localhost:3000/templates/bootstrap/navbar-static-top/">fixed navbar</a>, <a href="http://semantic-ui-forest.com/templates/semantic-ui/login/">login form</a>, <a href="http://semantic-ui-forest.com/templates/bootstrap/jumbotron/">jumbotron</a>, etc., are ready for any kinds of application right now. Of course, you can easily customize them with handy Semantic-UI classes at your will. Hit now: <a href="http://semantic-ui-forest.com/templates"><a href="http://semantic-ui-forest.com/templates" class="uri">http://semantic-ui-forest.com/templates</a></a>.</p>
+<h2 id="contribute">Contribute</h2>
+<p>All themes, templates and even the site itself are open source on GitHub:</p>
+<ul>
+<li><a href="https://github.com/semantic-ui-forest/forest-themes">semantic-ui-forest/forest-themes</a>: a collection of themes for Semantic UI.</li>
+<li><a href="https://github.com/semantic-ui-forest/semantic-ui-forest">semantic-ui-forest/semantic-ui-forest</a>: source code for this website.</li>
+<li><a href="https://github.com/semantic-ui-forest/awesome-semantic-ui">semantic-ui-forest/awesome-semantic-ui</a>: a curated list of awesome semantic-ui documentations, libraries and resources.</li>
+</ul>
+<p>If you have any problems, feel free to open an issue, and, as we all know, “Pull requests are always welcome”.</p>
+<p>Last but not least, we’d like to give many thanks and show our respect to <a href="https://semantic-ui.com/">Semantic-UI</a> for this wonderful front-end framework, to <a href="https://nanoc.ws/">Nanoc</a> for building static website easily and quickly, to <a href="https://bootswatch.com/">Bootswatch</a> and <a href="https://getbootstrap.com/">Bootstrap</a> that inspired us a lot, and to Github for hosting all of our work for free.</p>
+<p>Happy designing and coding!</p>
+
+        <div class="ui divider"></div>
+        <div class="ui small one item menu">
+          <a class="item" id="show-disqus-comments" onclick="show_disqus_comments()">Show Disqus Comments</a>
         </div>
-        <div class="ui vertical stripe segment">
-          <div class="ui divided grid stackable container">
-            <div class="row">
-              <article class="eleven wide column">
-                <h2 id="overview">Overview</h2>
-                <p><a href="https://semantic-ui.com">Semantic-UI</a> is a UI component framework based around useful principles from natural language. As its motto said, “User interface is the language of the web.” It allows developers to build beautiful websites fast, with <strong>concise HTML</strong>, <strong>intuitive javascript</strong>, and <strong>simplified debugging</strong>, helping make front-end development a delightful experience.</p>
-                <p>The key features of Semantic-UI:</p>
-                <ul>
-                <li>50+ UI elements</li>
-                <li>3000 + CSS variables</li>
-                <li>3 Levels of variable inheritance (similar to SublimeText)</li>
-                <li>Built with EM values for responsive design</li>
-                <li>Flexbox friendly</li>
-                </ul>
-                <p>Now it’s the time to ask that very important question — of course I know that you will finally shout it out loud — “Tell me, what’s the difference between Bootstrap and Semantic-UI?” Aha, this is a huge question. Actually, Semantic-UI has already show us an <a href="http://learnsemantic.com/preface/whats-different.html">answer</a>.</p>
-                <h3 id="semantic-ui-forest">Semantic-UI-Forest</h3>
-                <p>Semantic-UI-Forest provides collection of design, themes and templates for Semantic-UI.</p>
-                <p>Years ago, when I first met Semantic-UI, I fall in love with it, made serveral websites with it. I have to say that it’s quite a delightful experience. And soon Semantic-UI becames my favourite frontend CSS framework.</p>
-                
-                <div class="ui divider"></div>
-                <div class="ui small one item menu">
-                  <a class="item" id="show-disqus-comments" onclick="show_disqus_comments()">Show Disqus Comments</a>
-                </div>
-                <div id="disqus_thread"></div>
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              </article>
-              <aside class="five wide column">
-                <div class="ui small header">
-                  Committed
-                </div>
-                <date><i class="calendar icon"></i>2017-04-02</date>
-                <div class="ui small header">
-                  Category
-                </div>
-                <div class="ui small vertical fluid menu">
-                  <a class="item" href="/categories#announcement">Announcement<sup>1</sup></a>
-                </div>
-                <div class="ui small header">
-                  Tags
-                </div>
-                <div class="ui small vertical fluid menu">
-                  <a class="item" href="/tags#semantic-ui">Semantic-UI<sup>1</sup></a>
-                  <a class="item" href="/tags#bootstrap">Bootstrap<sup>1</sup></a>
-                  <a class="item" href="/tags#bootswatch">Bootswatch<sup>1</sup></a>
-                  <a class="item" href="/tags#nanoc">Nanoc<sup>1</sup></a>
-                </div>
-                <div class="ui small header">
-                  Links
-                </div>
-                <div class="ui small two item fluid menu">
-                  <a class="item" title="Archive" href="/blog">Archive</a><a class="item" title="Archive" href="/blog">Archive</a>
-                </div>
-              </aside>
-            </div>
-          </div>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </article>
+      <aside class="five wide column">
+        <div class="ui small header">
+          Committed
         </div>
-        <script>
-          $('article > h2').addClass('ui').addClass('dividing').addClass('header');
-        </script>
+        <date><i class="calendar icon"></i>2017-04-05</date>
+        <div class="ui small header">
+          License
+        </div>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="cc-license" src="/static/images/common/cc_byncsa.flat.guokr.svg" /></a>
+        <div class="ui small header">
+          Category
+        </div>
+        <div class="ui small vertical fluid menu">
+          <a class="item" href="/categories#announcement">Announcement<sup>1</sup></a>
+        </div>
+        <div class="ui small header">
+          Tags
+        </div>
+        <div class="ui small vertical fluid menu">
+          <a class="item" href="/tags#semantic-ui">Semantic-UI<sup>1</sup></a>
+          <a class="item" href="/tags#bootstrap">Bootstrap<sup>1</sup></a>
+          <a class="item" href="/tags#bootswatch">Bootswatch<sup>1</sup></a>
+          <a class="item" href="/tags#nanoc">Nanoc<sup>1</sup></a>
+        </div>
+        <div class="ui small header">
+          Links
+        </div>
+        <div class="ui small two item fluid menu">
+          <a class="item" title="Archive" href="/blog">Archive</a><a class="item" title="Archive" href="/blog">Archive</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<script>
+  $('article > h2').addClass('ui').addClass('dividing').addClass('header');
+</script>
       </div>
       <footer>
         <div class="ui vertical stripe segment">
@@ -133,10 +207,10 @@
               </div>
               <div class="three wide column">
                 <h4 class="ui header">
-                  Documentation
+                  Resources
                 </h4>
                 <div class="ui link list">
-                  <a class="item" href="http://semantic-ui-forest.com/help" target="_blank">Get Started</a><a class="item" href="http://semantic-ui-forest.com/faq" target="_blank">FAQ</a>
+                  <a class="item" href="http://semantic-ui-forest.com/themes" target="_blank">Themes</a><a class="item" href="http://semantic-ui-forest.com/templates" target="_blank">Templates</a>
                 </div>
               </div>
               <div class="three wide column">
@@ -144,7 +218,7 @@
                   About
                 </h4>
                 <div class="ui link list">
-                  <a class="item" href="http://semantic-ui-forest.com/author" target="_blank">Author</a><a class="item" href="http://semantic-ui-forest.com/license" target="_blank">License</a>
+                  <a class="item" href="https://github.com/semantic-ui-forest/semantic-ui-forest/graphs/contributors" target="_blank">Author</a><a class="item" href="https://github.com/semantic-ui-forest/semantic-ui-forest/blob/master/LICENSE" target="_blank">License</a>
                 </div>
               </div>
               <div class="three wide column">
@@ -152,7 +226,7 @@
                   Contact
                 </h4>
                 <div class="ui link list">
-                  <a class="item" href="mailto: xiaohanyu1988@gmail.com" target="_blank">Email</a><a class="item" href="https://github.com/semantic-ui-forest" target="_blank">Github</a>
+                  <a class="item" href="mailto:semantic-ui-forest@pptype.com">Email</a><a class="item" href="https://github.com/semantic-ui-forest" target="_blank">Github</a>
                 </div>
               </div>
             </div>
