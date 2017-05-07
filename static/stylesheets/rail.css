@@ -51,3 +51,6 @@
 
   #content .vertical.segment .container {
     width: auto; } }
+.ui.rail {
+  border: none !important;
+  background: transparent !important; }
