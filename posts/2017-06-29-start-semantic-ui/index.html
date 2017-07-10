@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=1300, initial-scale=1 user-scalable=yes" name="viewport" />
+    <meta content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." name="description" />
+    <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
+    <meta content="PPType" name="author" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="/manifest.json" rel="manifest" />
+    <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon" />
+    <meta content="#ffffff" name="theme-color" />
+    <title>Building websites with Semantic-UI from scratch</title>
+    <link href="/static/dist/semantic-ui/semantic.forest.min.css" rel="stylesheet" type="text/css" />
+    <link href="/static/stylesheets/forest-font.css" rel="stylesheet" type="text/css" />
+    <link href="/static/stylesheets/default.css" rel="stylesheet" type="text/css" />
+    <link href="/static/stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" />
+    <script src="/static/dist/jquery/jquery.min.js"></script>
+  </head>
+  <body class="default">
+    <div class="pusher">
+      <div id="content">
+        <nav class="ui borderless menu">
+          <div class="ui container">
+            <a class="brand item" href="/"><img src="/static/logo/gravatar/gravatar.svg" /></a><a class="item" href="/themes">Themes</a><a class="item" href="/templates">Templates</a><a class="item" href="/blog">Blog</a>
+            <div class="right menu">
+              <a class="item" href="https://github.com/semantic-ui-forest"><i class="github icon"></i></a><a class="item" href="/atom.xml"><i class="feed icon"></i></a>
+              <div class="item">
+                <form action="https://www.google.com/search" class="ui form" method="get" target="_blank">
+                  <input name="q" type="hidden" value="site:semantic-ui-forest.com" />
+                  <div class="ui left icon transparent input">
+                    <input name="q" placeholder="Search..." type="text" /><i class="search icon"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav><div class="ui vertical stripe segment">
+  <div class="ui container">
+    <h1 class="ui header">
+      Building websites with Semantic-UI from scratch
+      <div class="sub header quote"></div>
+    </h1>
+  </div>
+</div>
+<div class="ui vertical stripe segment">
+  <div class="ui divided grid stackable container">
+    <div class="row">
+      <article class="eleven wide column"><p>If you come here, we suppose you know what HTML and CSS are and have heard of Semantic-UI, that’s enough and let’s get started!</p>
+<h2 id="without-npm">Without <code>npm</code></h2>
+<p>If you do not want to delve into <code>node</code>, <code>npm</code>, <code>gulp</code> or something like that, you can simply put the prebuilt CSS and JavaScript files into your HTML header to start using Semantic-UI immediately, almost the same way with jQuery.</p>
+<h3 id="create-your-index.html">Create your <code>index.html</code></h3>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+  <span class="kw">&lt;head&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+  <span class="kw">&lt;body&gt;</span>
+    <span class="kw">&lt;div&gt;</span>
+      Default
+    <span class="kw">&lt;/div&gt;</span>
+
+    <span class="kw">&lt;div&gt;</span>
+      <span class="kw">&lt;div&gt;</span>
+        Item A
+      <span class="kw">&lt;/div&gt;</span>
+      <span class="kw">&lt;div&gt;</span>
+        Item B
+      <span class="kw">&lt;/div&gt;</span>
+      <span class="kw">&lt;div&gt;</span>
+        Item C
+      <span class="kw">&lt;/div&gt;</span>
+    <span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre></div>
+<p>It looks like this:</p>
+<p><img src="/static/images/posts/2017-06-29/simple-html.png" title="Simple HTML without Semantic-UI" /></p>
+<h3 id="download-the-prebuilt-semantic-ui-css-and-js-files">Download the prebuilt Semantic-UI CSS and JS files</h3>
+<p>Those files are in the official Semantic-UI repository on GitHub: <a href="https://github.com/Semantic-Org/Semantic-UI/tree/master/dist" class="uri">https://github.com/Semantic-Org/Semantic-UI/tree/master/dist</a></p>
+<p><img src="/static/images/posts/2017-06-29/prebuilt-dist.png" title="Prebuilt CSS and JS files in official Semantic-UI repo on GitHub" /></p>
+<p>What we need here are <code>semantic.min.css</code> and <code>semantic.min.js</code>, add them to the header:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;head&gt;</span>
+  <span class="kw">&lt;link</span><span class="ot"> href=</span><span class="st">&quot;./semantic.min.css&quot;</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> type=</span><span class="st">&quot;text/css&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;./jquery.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+  <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;./semantic.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+<span class="kw">&lt;/head&gt;</span></code></pre></div>
+<p>Surely you detect the <code>jquery.min.js</code>, yes, dynamic Semantic-UI components like tab, sticky and all APIs need jQuery as a prerequisite. If you do not need JavaScript at all (like this example), you can remove the two <code>script</code> lines.</p>
+<p>For convenience, here is a link to jQuery library: <a href="https://code.jquery.com/jquery-3.1.1.min.js" class="uri">https://code.jquery.com/jquery-3.1.1.min.js</a></p>
+<h3 id="write-ui-classes-for-div-elements">Write <code>ui</code> classes for <code>div</code> elements</h3>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;body&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;ui button&quot;</span><span class="kw">&gt;</span>
+    Default
+  <span class="kw">&lt;/div&gt;</span>
+
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;ui menu&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;item&quot;</span><span class="kw">&gt;</span>
+      Item A
+    <span class="kw">&lt;/div&gt;</span>
+    <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;item&quot;</span><span class="kw">&gt;</span>
+      Item B
+    <span class="kw">&lt;/div&gt;</span>
+    <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;item&quot;</span><span class="kw">&gt;</span>
+      Item C
+    <span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/body&gt;</span></code></pre></div>
+<p>The page then looks like this now:</p>
+<p><img src="/static/images/posts/2017-06-29/html-with-sui.png" title="HTML with prebuilt CSS and JS files" /></p>
+<p>So you may be able to conclude that, <code>ui</code> plus <code>button</code> means a button style element, <code>ui</code> plus <code>label</code> means a label style element and etc.. In Semantic-UI, all you need is merely the powerful keyword <code>ui</code>.</p>
+<p>The directory structure is intuitive:</p>
+<p><img src="/static/images/posts/2017-06-29/simple-directory.png" title="Simplest directory structure" /></p>
+<p>This example just show how you start to use Semantic-UI from scratch, for more detailed documentations on button, label, menu, grid, and other 50+ components, please refer to the official doc site: <a href="https://semantic-ui.com" class="uri">https://semantic-ui.com</a></p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/JyBKcfLUabc?list=PLya0UkqAf0pK31ArVGKpGMMM-1YKpct0V" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="with-npm">With <code>npm</code></h2>
+<p>If you feel comfortable with <code>npm</code> modules and building tools like <code>gulp</code>, that’s fantastic, it’s also extremely convenient to use Semantic-UI with these tools.</p>
+<p>Again, we start with the same <code>index.html</code> in the current working directory:</p>
+<p><img src="/static/images/posts/2017-06-29/only-index.png" title="Single index.html file" /></p>
+<p>If you do not install <code>gulp</code> yet, you can install it globally in your computer:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">npm</span> install -g gulp</code></pre></div>
+<h3 id="initiate-npm">Initiate <code>npm</code></h3>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">npm</span> init</code></pre></div>
+<p>It will ask you for some information like project name, but you could press Enter to skip them all. The command will create a file named <code>package.json</code> in the current directory.</p>
+<p><img src="/static/images/posts/2017-06-29/package-json.png" title="package.json file" /></p>
+<p>Don’t forget to do this initialization, or you may get trapped into some tricky directory path problems.</p>
+<h3 id="install-semantic-ui">Install Semantic-UI</h3>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">npm</span> install --save semantic-ui</code></pre></div>
+<p>This will takes several minutes according to the network. After this, the directory has 3 more items:</p>
+<p><img src="/static/images/posts/2017-06-29/sui-installed.png" title="Directory items after installing Semantic-UI with npm" /></p>
+<p>And you can look up the structure of the <code>semantic/</code> directory:</p>
+<p><img src="/static/images/posts/2017-06-29/semantic-dir.png" title="Semantic-UI directory structure" /></p>
+<h3 id="build-semantic-ui-css-and-js">Build Semantic-UI CSS and JS</h3>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="bu">cd</span> semantic
+<span class="ex">gulp</span> build</code></pre></div>
+<p>If your installed <code>gulp</code> is good to use, this procedure will take about 20 seconds on a laptop with decent hardware.</p>
+<p>The cookie is ready now:</p>
+<p><img src="/static/images/posts/2017-06-29/gulp-build.png" title="Semantic-UI dist directory after executing gulp build" /></p>
+<h3 id="add-prebuilt-css-and-js-to-your-header">Add prebuilt CSS and JS to your header</h3>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;head&gt;</span>
+  <span class="kw">&lt;link</span><span class="ot"> href=</span><span class="st">&quot;./semantic/dist/semantic.min.css&quot;</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> type=</span><span class="st">&quot;text/css&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;./jquery.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+  <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;./semantic/dist/semantic.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span>
+<span class="kw">&lt;/head&gt;</span></code></pre></div>
+<p>Just for explanation here, in fact it’s better to put the second <code>script</code> line at the end of body tag for faster page loading, you know that.</p>
+<p>Everything is good to go, the rest is completely the same as the first example, play freely with <code>ui</code> classes in your HTMl elements as you like.</p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/F_iTE_j7erw?list=PLya0UkqAf0pK31ArVGKpGMMM-1YKpct0V" frameborder="0" allowfullscreen></iframe>
+
+<p>Next time, we will show you how to cut the size of <code>semantic.min.css</code> and <code>semantic.min.js</code> by removing unused components, and apply Gzip compression on these files with Nginx to boost your websites’ performance.</p>
+<p>Happy coding!</p>
+
+        <div class="ui divider"></div>
+        <div class="ui small one item menu">
+          <a class="item" id="show-disqus-comments" onclick="show_disqus_comments()">Show Disqus Comments</a>
+        </div>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </article>
+      <aside class="five wide column">
+        <div class="ui small header">
+          Committed
+        </div>
+        <date><i class="calendar icon"></i>2017-06-29</date>
+        <div class="ui small header">
+          License
+        </div>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="cc-license" src="/static/images/common/cc_byncsa.flat.guokr.svg" /></a>
+        <div class="ui small header">
+          Category
+        </div>
+        <div class="ui small vertical fluid menu">
+          <a class="item" href="/categories#tutorial">Tutorial<sup>1</sup></a>
+        </div>
+        <div class="ui small header">
+          Tags
+        </div>
+        <div class="ui small vertical fluid menu">
+          <a class="item" href="/tags#semantic-ui">Semantic-UI<sup>2</sup></a>
+          <a class="item" href="/tags#tutorial">Tutorial<sup>1</sup></a>
+        </div>
+        <div class="ui small header">
+          Links
+        </div>
+        <div class="ui small two item fluid menu">
+          <a class="item" title="Introducing Semantic-UI-Forest" href="/posts/2017-04-05-introducing-semantic-ui-forest/">Prev</a><a class="item" title="Archive" href="/blog">Archive</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<script>
+  $('article > h2').addClass('ui').addClass('dividing').addClass('header');
+</script>
+      </div>
+      <footer>
+        <div class="ui vertical stripe segment">
+          <div class="ui container">
+            <div class="ui stackable relaxed divided grid">
+              <div class="four wide column">
+                <h3 class="ui blue header">
+                  Semantic-UI-Forest
+                </h3>
+                <div class="ui list">
+                  <div class="item">
+                    Made with <i class="heart icon"></i> by PPType, Inc.
+                  </div>
+                  <div class="item">
+                    © 2017
+                  </div>
+                </div>
+              </div>
+              <div class="three wide column">
+                <h4 class="ui header">
+                  Powered By
+                </h4>
+                <div class="ui link list">
+                  <a class="item" href="https://semantic-ui.com" target="_blank">Semanti-UI</a><a class="item" href="https://nanoc.ws" target="_blank">Nanoc</a>
+                </div>
+              </div>
+              <div class="three wide column">
+                <h4 class="ui header">
+                  Resources
+                </h4>
+                <div class="ui link list">
+                  <a class="item" href="http://semantic-ui-forest.com/themes" target="_blank">Themes</a><a class="item" href="http://semantic-ui-forest.com/templates" target="_blank">Templates</a>
+                </div>
+              </div>
+              <div class="three wide column">
+                <h4 class="ui header">
+                  About
+                </h4>
+                <div class="ui link list">
+                  <a class="item" href="https://github.com/semantic-ui-forest/semantic-ui-forest/graphs/contributors" target="_blank">Author</a><a class="item" href="https://github.com/semantic-ui-forest/semantic-ui-forest/blob/master/LICENSE" target="_blank">License</a>
+                </div>
+              </div>
+              <div class="three wide column">
+                <h4 class="ui header">
+                  Contact
+                </h4>
+                <div class="ui link list">
+                  <a class="item" href="mailto:semantic-ui-forest@pptype.com">Email</a><a class="item" href="https://github.com/semantic-ui-forest" target="_blank">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="/static/dist/semantic-ui/semantic.min.js"></script>
+        <script src="/static/javascripts/ga.js"></script>
+        <script src="/static/javascripts/growingio.js"></script>
+        <script src="/static/javascripts/default.js"></script>
+      </footer>
+    </div>
+    <div class="ui right demo sidebar vertical inverted menu">
+      <a class="header item">File Permissions</a><a class="item">Share on Social</a><a class="item">Share by E-mail</a><a class="item">Edit Permissions</a><a class="item">Delete Permanently</a>
+    </div>
+    <div class="ui left demo vertical inverted labeled icon sidebar menu">
+      <a class="item"><i class="home icon"></i> Home</a><a class="item"><i class="block layout icon"></i> Topics</a><a class="item"><i class="smile icon"></i> Friends</a><a class="item"><i class="calendar icon"></i> History</a><a class="item"><i class="mail icon"></i> Messages</a><a class="item"><i class="chat icon"></i> Discussions</a><a class="item"><i class="trophy icon"></i> Achievements</a><a class="item"><i class="shop icon"></i> Store</a><a class="item"><i class="settings icon"></i> Settings</a>
+    </div>
+    <div class="ui top demo sidebar ui segment">
+      <div class="ui center aligned page grid">
+        <div class="one column row">
+          <div class="sixteen wide column">
+            <h3 class="ui header">
+              New Content Awaits
+            </h3>
+          </div>
+        </div>
+        <div class="three column divided row">
+          <div class="column">
+            <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
+          </div>
+          <div class="column">
+            <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
+          </div>
+          <div class="column">
+            <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui bottom demo inverted nine item labeled icon sidebar menu">
+      <a class="item"><i class="home icon"></i> Home</a><a class="item"><i class="block layout icon"></i> Topics</a><a class="item"><i class="smile icon"></i> Friends</a><a class="item"><i class="calendar icon"></i> History</a><a class="item"><i class="mail icon"></i> Messages</a><a class="item"><i class="chat icon"></i> Discussions</a><a class="item"><i class="trophy icon"></i> Achievements</a><a class="item"><i class="shop icon"></i> Store</a><a class="item"><i class="settings icon"></i> Settings   </a>
+    </div>
+  </body>
+</html>
