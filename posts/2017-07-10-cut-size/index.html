@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=1300, initial-scale=1 user-scalable=yes" name="viewport" />
+    <meta content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." name="description" />
+    <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
+    <meta content="PPType" name="author" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="/manifest.json" rel="manifest" />
+    <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon" />
+    <meta content="#ffffff" name="theme-color" />
+    <title>How to cut the size of Semantic-UI</title>
+    <link href="/static/dist/semantic-ui/semantic.forest.min.css" rel="stylesheet" type="text/css" />
+    <link href="/static/stylesheets/forest-font.css" rel="stylesheet" type="text/css" />
+    <link href="/static/stylesheets/default.css" rel="stylesheet" type="text/css" />
+    <link href="/static/stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" />
+    <script src="/static/dist/jquery/jquery.min.js"></script>
+  </head>
+  <body class="default">
+    <div class="pusher">
+      <div id="content">
+        <nav class="ui borderless menu">
+          <div class="ui container">
+            <a class="brand item" href="/"><img src="/static/logo/gravatar/gravatar.svg" /></a><a class="item" href="/themes">Themes</a><a class="item" href="/templates">Templates</a><a class="item" href="/blog">Blog</a>
+            <div class="right menu">
+              <a class="item" href="https://github.com/semantic-ui-forest"><i class="github icon"></i></a><a class="item" href="/atom.xml"><i class="feed icon"></i></a>
+              <div class="item">
+                <form action="https://www.google.com/search" class="ui form" method="get" target="_blank">
+                  <input name="q" type="hidden" value="site:semantic-ui-forest.com" />
+                  <div class="ui left icon transparent input">
+                    <input name="q" placeholder="Search..." type="text" /><i class="search icon"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav><div class="ui vertical stripe segment">
+  <div class="ui container">
+    <h1 class="ui header">
+      How to cut the size of Semantic-UI
+      <div class="sub header quote"></div>
+    </h1>
+  </div>
+</div>
+<div class="ui vertical stripe segment">
+  <div class="ui divided grid stackable container">
+    <div class="row">
+      <article class="eleven wide column"><p>Semantic-UI is comfortable to work with, however, you may hesitate to use it in production because of its relatively huge size.</p>
+<p>We understand that, so we create this tutorial.</p>
+<h2 id="method-one-ocof-one-component-one-file">Method One: OCOF (One Component, One File)</h2>
+<p>The simplest way to reduce the size of Semantic-UI is to use only the specific CSS file of the component you need. For example, if you only need those fancy buttons of Semantic-UI, then you can only add the <code>button.min.css</code> to your HTML <code>&lt;head&gt;</code> part.</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html&gt;</span>
+  <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;link</span><span class="ot"> href=</span><span class="st">&quot;./semantic/dist/components/button.min.css&quot;</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> type=</span><span class="st">&quot;text/css&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;/head&gt;</span>
+  <span class="kw">&lt;body&gt;</span>
+    <span class="kw">&lt;div&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui mini red button&quot;</span><span class="kw">&gt;</span>Mini Red<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui tiny orange button&quot;</span><span class="kw">&gt;</span>Tiny Orange<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui small yellow button&quot;</span><span class="kw">&gt;</span>Small Yellow<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui medium olive button&quot;</span><span class="kw">&gt;</span>Medium Olive<span class="kw">&lt;/button&gt;</span>
+    <span class="kw">&lt;/div&gt;</span>
+    <span class="kw">&lt;div&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui large green button&quot;</span><span class="kw">&gt;</span>Large Green<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui big teal button&quot;</span><span class="kw">&gt;</span>Big Teal<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui huge blue button&quot;</span><span class="kw">&gt;</span>Huge Blue<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui massive violet button&quot;</span><span class="kw">&gt;</span>Massive Violet<span class="kw">&lt;/button&gt;</span>
+    <span class="kw">&lt;/div&gt;</span>
+    <span class="kw">&lt;div&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui massive purple button&quot;</span><span class="kw">&gt;</span>Massive Purple<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui huge pink button&quot;</span><span class="kw">&gt;</span>Huge Pink<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui big brown button&quot;</span><span class="kw">&gt;</span>Big Brown<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui large grey button&quot;</span><span class="kw">&gt;</span>Large Grey<span class="kw">&lt;/button&gt;</span>
+    <span class="kw">&lt;/div&gt;</span>
+    <span class="kw">&lt;div&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui medium black button&quot;</span><span class="kw">&gt;</span>Medium Black<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui small violet inverted button&quot;</span><span class="kw">&gt;</span>Small Violet Inverted<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui tiny green inverted button&quot;</span><span class="kw">&gt;</span>Tiny Green Inverted<span class="kw">&lt;/button&gt;</span>
+      <span class="kw">&lt;button</span><span class="ot"> class=</span><span class="st">&quot;ui mini red inverted button&quot;</span><span class="kw">&gt;</span>Mini Red Inverted<span class="kw">&lt;/button&gt;</span>
+    <span class="kw">&lt;div&gt;</span>
+  <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre></div>
+<p><img src="/static/images/posts/2017-07-10/buttons.png" title="Semantic-UI buttons" /></p>
+<p>You can see the <code>button.min.css</code> file is in <code>./semantic/dist/components</code>, in fact, you can find all components there.</p>
+<p>Or, you could also download a single file from Semantic-UI official repo on GitHub: <a href="https://github.com/Semantic-Org/Semantic-UI/tree/master/dist/components" class="uri">https://github.com/Semantic-Org/Semantic-UI/tree/master/dist/components</a></p>
+<p><img src="/static/images/posts/2017-07-10/dist-components.png" title="Semantic-UI repository&#39;s components directory on GitHub" /></p>
+<p>Commands:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">git</span> clone https://github.com/Semantic-Org/Semantic-UI
+<span class="bu">cd</span> Semantic-UI/dist/components</code></pre></div>
+<p>Another way, go to the button’s page of Semantic-UI, and click ‘Download’ button: <a href="https://semantic-ui.com/elements/button.html" class="uri">https://semantic-ui.com/elements/button.html</a></p>
+<p><img src="/static/images/posts/2017-07-10/download-button.png" title="Semantic-UI buttons" /></p>
+<p>Choose the ‘standalone’ version and you will get a ZIP file, inside which is the <code>button.min.css</code> you need.</p>
+<h2 id="method-two-acof-all-components-one-file">Method Two: ACOF (All Components, One file)</h2>
+<p>Mostly, Semantic-UI applies the ACOF way, so if you want to keep it like this and cut the size of CSS and JS at the same time, you have to delve into the powerful file <code>semantic.json</code> a little bit.</p>
+<p>I suppose you have install Semantic-UI successfully in your project, if you do not know how, please refer to another blog on our site: <a href="http://semantic-ui-forest.com/posts/2017-06-29-start-semantic-ui/" class="uri">http://semantic-ui-forest.com/posts/2017-06-29-start-semantic-ui/</a></p>
+<p>There you will find a detailed guide and a practical video to start.</p>
+<p>The directory structure:</p>
+<p><img src="/static/images/posts/2017-07-10/dir.png" title="Semantic-UI directory structure" /></p>
+<p>By default, <code>semantic.json</code> contains key/value pairs similar to these:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">{</span>
+  <span class="st">&quot;base&quot;</span>: <span class="st">&quot;semantic/&quot;</span>,
+  <span class="st">&quot;paths&quot;</span>: <span class="kw">{</span>
+    <span class="st">&quot;source&quot;</span>: <span class="kw">{</span>
+      <span class="st">&quot;config&quot;</span>: <span class="st">&quot;src/theme.config&quot;</span>,
+      <span class="st">&quot;definitions&quot;</span>: <span class="st">&quot;src/definitions/&quot;</span>,
+      <span class="st">&quot;site&quot;</span>: <span class="st">&quot;src/site/&quot;</span>,
+      <span class="st">&quot;themes&quot;</span>: <span class="st">&quot;src/themes/&quot;</span>
+    <span class="kw">}</span>,
+    <span class="st">&quot;output&quot;</span>: <span class="kw">{</span>
+      <span class="st">&quot;packaged&quot;</span>: <span class="st">&quot;dist/&quot;</span>,
+      <span class="st">&quot;uncompressed&quot;</span>: <span class="st">&quot;dist/components/&quot;</span>,
+      <span class="st">&quot;compressed&quot;</span>: <span class="st">&quot;dist/components/&quot;</span>,
+      <span class="st">&quot;themes&quot;</span>: <span class="st">&quot;dist/themes/&quot;</span>
+    <span class="kw">}</span>,
+    <span class="st">&quot;clean&quot;</span>: <span class="st">&quot;dist/&quot;</span>
+  <span class="kw">}</span>,
+  <span class="st">&quot;permission&quot;</span>: <span class="fu">false</span>,
+  <span class="st">&quot;autoInstall&quot;</span>: <span class="fu">false</span>,
+  <span class="st">&quot;rtl&quot;</span>: <span class="fu">false</span>,
+  <span class="st">&quot;version&quot;</span>: <span class="st">&quot;2.2.10&quot;</span>,
+<span class="kw">}</span></code></pre></div>
+<p>If we run <code>gulp build</code> with the above configuration, the final sizes of <code>semantic.min.css</code> and <code>semantic.min.js</code> are respectively 548KB and 276KB, besides the <code>jquery.min.js</code>.</p>
+<p><img src="/static/images/posts/2017-07-10/full-size.png" title="Full size of semantic.min.css and semantic.min.js" /></p>
+<p>However, in real world development, you may have only used some of the components in your website. Then you can add only the specific components involved into a list after the <code>components</code> key in the <code>semantic.json</code>, like this:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">  <span class="ex">...</span>(keep the same)<span class="ex">...</span>
+  <span class="st">&quot;permission&quot;</span>: <span class="fu">false</span>,
+  <span class="st">&quot;autoInstall&quot;</span>: <span class="fu">false</span>,
+  <span class="st">&quot;rtl&quot;</span>: <span class="fu">false</span>,
+  <span class="st">&quot;version&quot;</span>: <span class="st">&quot;2.2.10&quot;</span>,
+  <span class="st">&quot;components&quot;</span>:<span class="bu"> [</span>
+    <span class="st">&quot;button&quot;</span>,
+    <span class="st">&quot;container&quot;</span>,
+    <span class="st">&quot;divider&quot;</span>,
+    <span class="st">&quot;header&quot;</span>,
+    <span class="st">&quot;icon&quot;</span>,
+    <span class="st">&quot;image&quot;</span>,
+    <span class="st">&quot;label&quot;</span>,
+    <span class="st">&quot;list&quot;</span>,
+    <span class="st">&quot;segment&quot;</span>,
+    <span class="st">&quot;grid&quot;</span>,
+    <span class="st">&quot;menu&quot;</span>,
+    <span class="st">&quot;item&quot;</span>,
+    <span class="st">&quot;accordion&quot;</span>,
+    <span class="st">&quot;dropdown&quot;</span>
+  ]
+}</code></pre></div>
+<p>Note: don’t forget to add a comma after the <code>version</code> line.</p>
+<p>With the most popular components listed, we now have relatively smaller CSS and JS files, as shown below:</p>
+<p><img src="/static/images/posts/2017-07-10/smaller-size.png" title="Smaller size with only components used in project" /></p>
+<p>It’s nearly half the size of CSS and JS with all components. And you might discover that grid, button, icon and menu components are the real big shots.</p>
+<p>We have also made a simple video to show how to do this lively, check it out if interested:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OVf5IFGYzpI" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="final-nuclear-weapon-gzip">Final nuclear weapon: Gzip</h2>
+<p>Sometimes 300KB is still way too large for a static site, luckily, we have another powerful weapon—Gzip.</p>
+<p>There are various HTTP server programs on the market, here I just show how to configure Gzip compression on a Nginx server. The principle is the same on Apache or other servers, but the syntax may vary.</p>
+<p>On a typical CentOS or Ubuntu operating system, the configuration file of Nginx server would be located at <code>/etc/ngnix/conf.d/default.conf</code> or <code>/etc/nginx/nginx.conf</code>. Find it and add these lines:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">gzip</span> on<span class="kw">;</span>
+<span class="ex">gzip_disable</span> <span class="st">&quot;MSIE [1-6]\.&quot;</span><span class="kw">;</span>
+<span class="ex">gzip_http_version</span> 1.1<span class="kw">;</span>
+<span class="ex">gzip_comp_level</span> 6<span class="kw">;</span>
+<span class="ex">gzip_min_length</span> 1100<span class="kw">;</span>
+<span class="ex">gzip_buffers</span> 16 8k<span class="kw">;</span>
+<span class="ex">gzip_proxied</span> any<span class="kw">;</span>
+<span class="ex">gzip_static</span> on<span class="kw">;</span>
+<span class="ex">gzip_vary</span> on<span class="kw">;</span>
+<span class="ex">gzip_types</span>
+<span class="co"># text/html is always compressed by HttpGzipModule</span>
+  <span class="ex">text/css</span>
+  <span class="ex">text/javascript</span>
+  <span class="ex">text/xml</span>
+  <span class="ex">text/plain</span>
+  <span class="ex">application/javascript</span>
+  <span class="ex">image/svg+xml</span>;</code></pre></div>
+<p>Be careful with semicolons and note that image files such as <code>image/png</code> and <code>image/jpg</code> have already been compressed in their own formats, so it’s useless to add them to the <code>gzip_types</code> list again. Gzip has substantial effects on text files like CSS and JS, generally it will reduce 70% of the original size.</p>
+<p>Parameters like <code>gzip_version</code>, <code>gzip_cmp_level</code>, <code>gzip_min_length</code> and <code>gzip_buffers</code> do not matter too much.</p>
+<p>Above are some methods to cut the size of Semantic-UI for your websites. Enjoy!</p>
+<p>Next time, we will discuss how to change the themes of Semantic-UI to fresh your sites.</p>
+
+        <div class="ui divider"></div>
+        <div class="ui small one item menu">
+          <a class="item" id="show-disqus-comments" onclick="show_disqus_comments()">Show Disqus Comments</a>
+        </div>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </article>
+      <aside class="five wide column">
+        <div class="ui small header">
+          Committed
+        </div>
+        <date><i class="calendar icon"></i>2017-07-10</date>
+        <div class="ui small header">
+          License
+        </div>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="cc-license" src="/static/images/common/cc_byncsa.flat.guokr.svg" /></a>
+        <div class="ui small header">
+          Category
+        </div>
+        <div class="ui small vertical fluid menu">
+          <a class="item" href="/categories#tutorial">Tutorial<sup>2</sup></a>
+        </div>
+        <div class="ui small header">
+          Tags
+        </div>
+        <div class="ui small vertical fluid menu">
+          <a class="item" href="/tags#semantic-ui">Semantic-UI<sup>3</sup></a>
+          <a class="item" href="/tags#tutorial">Tutorial<sup>2</sup></a>
+        </div>
+        <div class="ui small header">
+          Links
+        </div>
+        <div class="ui small two item fluid menu">
+          <a class="item" title="Building websites with Semantic-UI from scratch" href="/posts/2017-06-29-start-semantic-ui/">Prev</a><a class="item" title="Archive" href="/blog">Archive</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<script>
+  $('article > h2').addClass('ui').addClass('dividing').addClass('header');
+</script>
+      </div>
+      <footer>
+        <div class="ui vertical stripe segment">
+          <div class="ui container">
+            <div class="ui stackable relaxed divided grid">
+              <div class="four wide column">
+                <h3 class="ui blue header">
+                  Semantic-UI-Forest
+                </h3>
+                <div class="ui list">
+                  <div class="item">
+                    Made with <i class="heart icon"></i> by PPType, Inc.
+                  </div>
+                  <div class="item">
+                    © 2017
+                  </div>
+                </div>
+              </div>
+              <div class="three wide column">
+                <h4 class="ui header">
+                  Powered By
+                </h4>
+                <div class="ui link list">
+                  <a class="item" href="https://semantic-ui.com" target="_blank">Semanti-UI</a><a class="item" href="https://nanoc.ws" target="_blank">Nanoc</a>
+                </div>
+              </div>
+              <div class="three wide column">
+                <h4 class="ui header">
+                  Resources
+                </h4>
+                <div class="ui link list">
+                  <a class="item" href="http://semantic-ui-forest.com/themes" target="_blank">Themes</a><a class="item" href="http://semantic-ui-forest.com/templates" target="_blank">Templates</a>
+                </div>
+              </div>
+              <div class="three wide column">
+                <h4 class="ui header">
+                  About
+                </h4>
+                <div class="ui link list">
+                  <a class="item" href="https://github.com/semantic-ui-forest/semantic-ui-forest/graphs/contributors" target="_blank">Author</a><a class="item" href="https://github.com/semantic-ui-forest/semantic-ui-forest/blob/master/LICENSE" target="_blank">License</a>
+                </div>
+              </div>
+              <div class="three wide column">
+                <h4 class="ui header">
+                  Contact
+                </h4>
+                <div class="ui link list">
+                  <a class="item" href="mailto:semantic-ui-forest@pptype.com">Email</a><a class="item" href="https://github.com/semantic-ui-forest" target="_blank">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="/static/dist/semantic-ui/semantic.min.js"></script>
+        <script src="/static/javascripts/ga.js"></script>
+        <script src="/static/javascripts/growingio.js"></script>
+        <script src="/static/javascripts/default.js"></script>
+      </footer>
+    </div>
+    <div class="ui right demo sidebar vertical inverted menu">
+      <a class="header item">File Permissions</a><a class="item">Share on Social</a><a class="item">Share by E-mail</a><a class="item">Edit Permissions</a><a class="item">Delete Permanently</a>
+    </div>
+    <div class="ui left demo vertical inverted labeled icon sidebar menu">
+      <a class="item"><i class="home icon"></i> Home</a><a class="item"><i class="block layout icon"></i> Topics</a><a class="item"><i class="smile icon"></i> Friends</a><a class="item"><i class="calendar icon"></i> History</a><a class="item"><i class="mail icon"></i> Messages</a><a class="item"><i class="chat icon"></i> Discussions</a><a class="item"><i class="trophy icon"></i> Achievements</a><a class="item"><i class="shop icon"></i> Store</a><a class="item"><i class="settings icon"></i> Settings</a>
+    </div>
+    <div class="ui top demo sidebar ui segment">
+      <div class="ui center aligned page grid">
+        <div class="one column row">
+          <div class="sixteen wide column">
+            <h3 class="ui header">
+              New Content Awaits
+            </h3>
+          </div>
+        </div>
+        <div class="three column divided row">
+          <div class="column">
+            <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
+          </div>
+          <div class="column">
+            <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
+          </div>
+          <div class="column">
+            <img class="ui wireframe image" src="/static/kitchen-sink/images/wireframe/media-paragraph.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui bottom demo inverted nine item labeled icon sidebar menu">
+      <a class="item"><i class="home icon"></i> Home</a><a class="item"><i class="block layout icon"></i> Topics</a><a class="item"><i class="smile icon"></i> Friends</a><a class="item"><i class="calendar icon"></i> History</a><a class="item"><i class="mail icon"></i> Messages</a><a class="item"><i class="chat icon"></i> Discussions</a><a class="item"><i class="trophy icon"></i> Achievements</a><a class="item"><i class="shop icon"></i> Store</a><a class="item"><i class="settings icon"></i> Settings   </a>
+    </div>
+  </body>
+</html>
